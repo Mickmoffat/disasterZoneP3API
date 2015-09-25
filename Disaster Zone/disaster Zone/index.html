@@ -46,34 +46,16 @@
     <!--== GOOGLE API [ENABLED]  ==-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <!-- ENABLE BEFORE PAGE LOAD -->
-    <script>
-        function initialize() {
-            var mapCanvas = document.getElementById('googleAPI'); //id selector
-            var mapOptions = {
-                center: new google.maps.LatLng(-1.0000, 174.0000), //map location
-                zoom: 3, //zoom level
-                draggable: true, //disable drag
-                zoomControl: true, //disable zoom
-                disableDoubleClickZoom: true, //disables zoom
-                scrollwheel: false, //disables scroll wheel
-                disableDefaultUI: false, //disables UI
-                mapTypeId: google.maps.MapTypeId.TERRAIN //sets terrain view
-            }
+    <!--== GOOGLE API CUSTOM SETTINGS ==-->
+    <script src="./style/googleMapsAPI.js"></script>
 
-
-            var map = new google.maps.Map(mapCanvas, mapOptions)
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 
     <!--= GOOGLE API KEY =-->
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtKo2P7hgtRk1NUTlPjg_LDwC4EtKXgUo&callback=initMap">
     </script>
 
-  
+
     <!---==== JavaScrypt ====--->
     <!---=== Internal [DISABLED]
         <script src="./libs/jQuery/javaScrypt.js"></script> ===--->
@@ -82,7 +64,7 @@
     <!--+==== PLUGINS jQuery ====+-->
     <!--=== smoothScrollPlugin ===-->
     <script src="./framework/smoothScroll/mooToolsMore.js"></script>
-    <!-- Tiny Scroll 
+    <!-- Tiny Scroll
     <script src="./framework/tinyScroll/jquery.tinyscrollbar.min.js"></script>
     -->
 
