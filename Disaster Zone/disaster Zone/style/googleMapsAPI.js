@@ -1,36 +1,51 @@
 /**** GOOGLE MAPS API Disaster Zone MDDN201 P3 [2015] (300317288) ****/
 
-    /** CUSTOM GOOGLE API SETTINGS **/
-    function initialize() {
-        var mapCanvas = document.getElementById('googleAPI'); //id selector
+/*** CUSTOM SETTINGS ***/
 
-        var marker = new google.maps.Marker({
-            position: map.getCenter(),
-           map: map
-        });
-        /* MAP OPTIONS */
+function initMap() {
+    /***** DISASTER ZONE VARABLES POS *****/
 
-        var mapOptions = {
-            center: {lat:-42, lng:174}, //map location
-            zoom: 3, //zoom level
-            draggable: true, //disable drag
-            zoomControl: true, //disable zoom
-            disableDoubleClickZoom: true, //disables zoom
-            scrollwheel: false, //disables scroll wheel
-            disableDefaultUI: false, //disables UI
-            mapTypeId: google.maps.MapTypeId.TERRAIN //sets terrain view
+    /**** TAUMARUNI EARTH QUAKE NZ ****/
+    var taumarunui = new google.maps.LatLng(-38.8833, 175.2617);
 
-        }
+    /*** PERTH BUSH FIRE AUS ***/
+    var perth = new google.maps.LatLng(-31.9522, 115.8589);
 
+    /** CHIANG RAI FLOOD THAILAND **/
+    var chiangRai = new google.maps.LatLng(19.9094, 99.8275); //pos
 
+    var map = new google.maps.Map(document.getElementById('googleAPI'), {
+        zoom: 4,
+        center: { lat: -25.363882, lng: 131.044922 } //starting locaiton of google maps
+    });
 
-    }
+    /**+CUSTOM ICONS SVG +**/
+   
 
 
+    /*++++_ DISASTER WEIGHPOINTS _++++*/
 
+    /*++++ TAUMARUNI ++++*/
+    var marker = new google.maps.Marker({
+        position: taumarunui, //position of weighpoint
+        map: map
+    });
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+    /*+++ PERTH +++*/
+    var marker = new google.maps.Marker({
+        position: perth, //position of weighpoint
+        map: map
+    });
 
-    /* GOOGLE API KEY */
+    /*++ CHIANG RAI ++*/
+    var marker = new google.maps.Marker({
+        position: chiangRai, //position of weighpoint
+        map: map
+    });
+
+    /*+ ILLIONIS +*/
+
+    /* BRAZIL */
+}
     
 
