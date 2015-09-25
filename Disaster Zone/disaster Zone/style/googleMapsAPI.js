@@ -20,6 +20,7 @@ function initMap() {
     /*HURRICANE BRAZIL*/
     var brazil = new google.maps.LatLng(-15.4700, -47.5500); //pos
 
+
     var map = new google.maps.Map(document.getElementById('googleAPI'), {
         zoom: 4,
         center: { lat: -25.363882, lng: 131.044922 } //starting locaiton of google maps
