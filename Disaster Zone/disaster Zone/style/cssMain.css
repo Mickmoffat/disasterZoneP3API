@@ -1,0 +1,1090 @@
+/**** CSS main style sheet disaster zone MDDN201 P3 [2015] (300317288)****/
+
+/***** INDEX STYLE *****/
+/*[STOP STYLETIME]*/
+
+/*CUSTOM FONT LOCAL*/
+/* CONTENT */
+
+/**** FONT-SIZE-STYLE ****/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+/*** HEADER ***/
+h1 {
+    font-family:'lato';
+    color:white;
+    font-size:42px;    
+    font-size:2.625em;
+    font-size:3.2vw;
+    
+    padding:1.5%;
+}
+
+h2 {
+    font-family:'Lato';
+    color:#183152; /* DARK BLUE */
+    font-size:42px;    
+    font-size:2.625em;
+    font-size:2vw;
+    margin:0.1%;
+    padding:0.2%;
+}
+ /*-- NOT WORKING --*/
+/* ALERT  [DISABLED REPLACED BY IMG]*/
+h3 {
+    font-family:'Lato';
+    color:rgba(29, 29, 29, 0.54);
+    font-size:42px;    
+    font-size:2.625em;
+    font-size:1.8vw;
+    padding:0;
+}
+
+/* ALERT FROM TITLE */
+h6 {
+    font-family:'Lato';
+    color:#201c1c; /* off black*/
+    font-size:20px;
+    font-size:1.1vw;
+    margin:0.5%;
+    padding:0.8%;
+    display:inline-block;
+
+}
+
+ /*-- NOT WORKING --*/
+/** MAP KEY ITEMS **/
+h4 {
+    font-family:'Lato';
+    color:#183152; /* DARK BLUE*/
+    font-size:0.9vw;
+    margin:0.2%;
+    padding:0.2%;
+
+}
+
+#navHExpand h4 {
+    color:#183152; /*DARK BLUE*/
+}
+
+h5 {
+    font-family:'Lato';
+    color:#183152; /* DARK BLUE*/
+    font-size:0.8vw;
+    margin:2%;
+    padding:1.2%;
+}
+
+/** MAP KEY ITEMS END **/
+
+/** PARAGRAPH **/
+p {
+    font-family:'Lato';
+    color:#201c1c; /* off black*/
+    font-size:18px;
+    font-size:1.536em;
+    /*font-size:1.8vh;*/
+    font-size:0.9vw;
+    padding:0.5%;
+}
+
+
+
+
+/** LIST ELEMENT **/
+/* UNSORTED */
+ul {
+    font-family:'Lato';
+    color:#201c1c; /* off black*/;
+    font-size:18px;
+    font-size:1.536em;
+    /*font-size:1.8vh;*/
+    font-size:0.9vw;
+}
+
+li {
+    color:#201c1c; /* off black*/ 
+}
+/* SORTED */
+
+/* A LINK */
+a:link {
+    color:#378148; /* GREEN*/
+}
+
+a {
+
+     color:#378148; /*GREEN*/
+}
+
+
+/**** FONT-SIZE-STYLE-END ****/
+
+/***** BODY *****/
+body {    
+    width:auto;
+    height:100%;
+    overflow:visible;
+    padding:0.2%;
+    margin:auto;
+
+    border: 2px dashed green;
+}
+
+/***** BODY END *****/
+
+/***** HEADER *****/
+header {
+    width:100%;
+    height:12%;
+    margin:auto;
+    overflow:hidden;
+    
+    /*COLOR*/
+    background-color:#f9f9f9; /*OFF WHITE*/
+
+   border: 2px dashed orange;
+}
+
+/*** HEADER CONTENT ***/
+
+/* CLASS */
+.headerLogo {
+    width:74.5%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    /* */
+    border:2px solid #00ff34; /*BRIGHT GREEN*/
+}
+
+#headerLogoScale {
+    width:60%;
+    margin-left:0.5%;
+    height:auto;
+}
+
+/* HEADER ALERT CONTAIN */
+ /*-- NOT WORKING --*/
+
+.headerAlert {
+    width:23.84%;
+    height:auto;
+    float:right;
+    margin-right:0.5%;
+    padding:0.5%;
+    display:inline-block;
+
+    /*BORDER*/
+    /*L*/
+    border-top-left-radius:20px;
+    border-top-left-radius:0.6em;
+    border-bottom-left-radius:0.2em;
+    /*R*/
+    border-top-right-radius:20px;
+    border-top-right-radius:0.6em;
+    border-bottom-right-radius:0.2em;
+
+    background-color:#375D81; /* BLUE DARK */
+    overflow:hidden;
+    
+    /* */
+   
+    border:2px solid #b716ee; /*PURPLE*/
+    
+    
+}
+
+
+/* ALERT TEXT */
+#altertText {
+    width:27%;
+    height:99%;
+    margin:0.5%;
+    display:inline-block;
+    
+    /**/ 
+    border: 1px solid #C9FFD5;
+
+}
+
+#alertText {
+display:inline-block;
+}
+
+#imgAlert {
+width:100%;
+height:auto;
+
+}
+/* HEADER ALERTS */
+/*ALERT ID*/
+#alertID {
+    width:20%;
+    height:99%;
+    margin:0.5%;
+    display:inline-block;
+    
+    /* */
+    border: 1px solid #C9FFD5;
+}
+/* EMAIL */
+.emailAlert {
+    
+    
+    /* */
+    border: 1px solid green;
+}
+
+/* SMS */
+.smsAlert {
+ 
+    /* */
+    border:1px dotted black; /* WHITE*/
+}
+
+/* RADIO */
+
+.radioAlert {
+
+    /**/
+    border:1px dashed #d8e10e; /*EW YELLO*/
+
+}
+
+ /*-- NOT WORKING --*/
+/* ID */
+
+/* ALERTS SHOW */
+/* alerts div pop up*/
+.alertsPopUpDiv {
+
+    /**/
+    border:2px solid green;
+
+}
+/* ID */
+#smsAlertShow {
+    width:23.84%;
+    height:auto;
+    margin-left:75%;
+    /*margin-left:74vw;*/
+    margin-top:6%;
+    padding:0.5%;
+    position:absolute;
+    z-index:5;
+
+    
+    /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+    
+    background-color:#C4D7ED; /* LIGHT BLUE */
+    overflow:hidden;
+
+    /* */
+    border:2px solid #b716ee;  /*PURPLE*/
+}
+
+#emailAlertShow {
+    width:23.84%;
+    height:auto;
+    margin-left:75%;
+    /*margin-left:74vw;*/
+    margin-top:6%;
+  
+    padding:0.5%;
+    position:absolute;
+    z-index:5;
+
+    /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+
+    overflow:hidden;
+    background-color:#C4D7ED; /* LIGHT BLUE */
+    
+    /* */
+    border:2px solid #b716ee; /* PURPLE*/
+    
+}
+
+#radioAlertShow {
+    width:23.84%;
+    height:auto;
+    margin-left:75%;
+    /*margin-left:74vw;*/
+    margin-top:6%;
+  
+    padding:0.5%;
+    position:absolute;
+    z-index:5;
+
+    /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+    
+    background-color:#C4D7ED; /* LIGHT BLUE */
+    overflow:hidden;
+
+    /* */
+    border:2px solid #b716ee;  /* PURPLE */
+    
+}
+
+
+#alertsPosition {
+    width:23.34%;
+    height:auto;
+   
+    margin-top:6%;
+    margin-right:5%;
+    margin-left:74.5%;
+    
+    position:absolute;
+    display:inline-block;
+
+    overflow:hidden;
+    background-color:#ff530d; /* ORANGE */
+    
+    /**/
+    border:2px solid #b716ee; /*PURPLE*/
+    
+}
+
+/* CLASS */
+
+/* ALERTS SHOW END */
+
+/**++ FORM ++**/
+form {
+    
+    display:inline-block;
+
+}
+/* FORM TEXT SYTLE */
+input[type=text]{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin:0.3%;
+    height:1.3vw;
+      
+}
+
+/* FORM RADIO STYLE [FIX LATER
+input[name=agree] {
+    font-family:'Lato';
+    font-size:1.1vw;
+    ]*/
+
+input[type=submit]{
+font-family:'Lato';
+    font-size:1.1vw;
+
+}
+    
+
+/* NUMBER FORM [DISABLED P3]
+input[type=number]{
+    width:25%;
+    -webkit-appearance: none; 
+}
+*/
+/*+ PLACEHOLDER TEXT STYLE +*/
+::-webkit-input-placeholder {
+   font-family:'Lato';
+   font-size:1.1vw;
+   color: grey;
+     
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family:'Lato';
+   font-size:1.1vw;
+   color: grey;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family:'Lato';
+   font-size:1.1vw;
+   color: grey;
+}
+
+:-ms-input-placeholder {  
+   font-family:'Lato';
+   font-size:1.1vw;
+   color: grey; 
+}
+
+/*+ PLACEHOLDER TEXT STYLE END +*/
+
+
+
+/** INPUT DIV **/
+.inputDivRow1 {
+    
+}
+#inputDiv {
+    
+    display:inline-block;
+    overflow:hidden;
+
+    /* */
+    border:2px dashed #FFFFCB; /*CREME*/
+}
+
+.inputDivRow2 {
+    width:auto;
+    height:auto;
+    position:absolute;
+
+    /* */
+    border:2px solid #c916de; /*PURPLE*/
+}
+/* [DISABLED]
+.inputDivRow2:first-child input[type=text] {
+    
+        margin-left:25px;
+        margin-left:2vw;
+    }
+*/
+/*** HEADER CONTENT END ***/
+/**** NAV BAR ****/
+
+/*** NAV ID [NEEDS FIXING] ***/
+#navBar {
+    width:454px;
+    width:23.84%;
+    height:80px;
+    height:85%;
+    margin:0.5%;
+    display:inline-block;
+
+    /*COLOR*/
+    background-color:#375D81; /* BLUE DARK */
+
+    /* */
+    border: 2px dashed #c916de;
+  }
+
+#h1NavHeader {
+    text-align:center;
+}
+/*** NAV ID END ***/
+
+/** NAV CLASS **/
+.navNews {
+    float:left;
+	/*BORDER*/
+    /*L*/
+    border-top-left-radius:20px;
+    border-top-left-radius:0.6em;
+    border-bottom-left-radius:0.2em;
+    /*R*/
+    border-top-right-radius:20px;
+    border-top-right-radius:0.6em;
+    border-bottom-right-radius:0.2em;
+    
+    /* */
+    border: 2px dashed #c916de;
+}
+
+.navPrep {
+	/*BORDER*/
+    /*L*/
+    border-top-left-radius:20px;
+    border-top-left-radius:0.6em;
+    border-bottom-left-radius:0.2em;
+    /*R*/
+    border-top-right-radius:20px;
+    border-top-right-radius:0.6em;
+    border-bottom-right-radius:0.2em;
+
+    /* */
+    border: 2px dashed #0026ff;
+}
+
+.navCommunication {
+	/*BORDER*/
+    /*L*/
+    border-top-left-radius:20px;
+    border-top-left-radius:0.6em;
+    border-bottom-left-radius:0.2em;
+    /*R*/
+    border-top-right-radius:20px;
+    border-top-right-radius:0.6em;
+    border-bottom-right-radius:0.2em;
+    
+    
+
+    /*[NEEDS FIXING]*/
+    /* WORKS BUT NOT FULLSCREEN
+    position:absolute;
+    height:11.5%;
+    height:7vw;
+    max-height:;
+    display:inline-block;
+    
+    margin-top:-125px;
+    margin-top:-6.5%;
+    margin-left:75.1%; 
+
+    border: 2px dashed #ff00dc;*/ 
+}
+
+.navHelpOut {
+    float:right;
+	/*BORDER*/
+    /*L*/
+    border-top-left-radius:20px;
+    border-top-left-radius:0.6em;
+    border-bottom-left-radius:0.2em;
+    /*R*/
+    border-top-right-radius:20px;
+    border-top-right-radius:0.6em;
+    border-bottom-right-radius:0.2em;
+
+    
+    /* */
+    border: 2px dashed #ff0000; 
+}
+
+/**-+ HIDE THE BASTARD [P3]>:) +-**/
+/* FOR GIGGLES https://www.youtube.com/watch?v=ONRDwJlCpn4 */
+.moreInfoHide {
+    width:100%;
+    height:15%;
+    overflow:hidden;
+
+    /*[NEEDS FIXING]*/
+    border: 2px solid #ff00dc;
+}
+
+/***+++++ NAV EXPAND +++++***/
+/**+++ ID +++**/
+
+/**+++ ID END +++**/
+
+/*++ CLASS ++*/
+
+#navNExpand {
+    width:23.84%;
+    /*height:90%;*/
+    /* SETTING CHANGED BY JS*/
+    height:84vh;
+    margin-top:0.2%;
+    margin-left:0.5%;
+    margin-right:0.5%;
+    margin-bottom:0.5%;
+    padding:0.2%;
+    overflow:scroll;
+    float:left;
+
+   /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+    /*position:absolute;
+     z-index:1;*/
+    
+    
+    
+   background-color:#C4D7ED; /* LIGHT BLUE */
+
+    /* */
+    border: 2px dashed #c916de;
+}
+
+/** NEWS EXPAND CONTENT [ADD HIDDEN ELEMENT IN JQ EXPAND ON CLICK [P3]]**/
+.NSCR1 {
+    height:auto;
+    margin-bottom:0.5%;
+    overflow:hidden;
+
+    /* COLOR 
+    background-color:#ffffff;*/
+
+    /**/
+    border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
+}
+
+.NSCR2 {
+   height:auto;
+   margin-bottom:0.5%;
+
+    /* COLOR 
+    background-color:#ffffff; */
+
+   /**/
+  border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
+}
+
+.NSCR3 {
+   height:auto;
+   margin-bottom:0.5%;
+
+    /* COLOR 
+    background-color:#ffffff; */
+   
+      /**/
+   border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
+}
+
+.NSCR4 {
+   height:auto;
+   margin-bottom:0.5%;
+
+    /* COLOR 
+    background-color:#ffffff; */
+
+      /**/
+  border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
+}
+
+.NSCR5 {
+   height:auto;
+   margin-bottom:0.5%;
+
+    /* COLOR
+    background-color:#ffffff;  */
+    
+     /**/
+  border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
+}
+
+.NSCR6 {
+   height:auto;
+   margin-bottom:0.5%;
+
+    /* COLOR 
+    background-color:#ffffff; */
+   
+      /**/
+    border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
+}
+
+
+/** NEWS EXPAND CONTENT END **/
+
+#navPExpand {
+    width:23.84%;
+    /*height:90%;*/
+    /* SETTING CHANGED BY JS*/
+    margin-top:0.2%;
+    margin-left:25.24%;
+    padding:0.2%;
+    position:absolute;
+    
+    z-index:4;
+
+   /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+
+    background-color:#C4D7ED; /* LIGHT BLUE */
+    
+    /* */
+    border: 2px dashed #0026ff;
+}
+
+/** PREP EXPAND CONTENT **/
+.PECR1 {
+   height:auto;
+   margin-bottom:0.5%;
+
+   /* */
+   border:1px solid #ff0000;  /* RED */
+
+}
+
+/** PREP EXPAND CONTENT END **/
+
+#navComExpand {
+    width:23.84%;
+    /* [Height] SETTING CHANGED BY JS*/
+    margin-top:0.2%;
+    margin-left:50.10%;
+    padding:0.2%;
+    position:absolute;
+    z-index:4;
+
+   /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+
+    
+   background-color:#C4D7ED; /* LIGHT BLUE */
+    
+    /* */
+    border: 2px dashed #ff00dc;
+}
+
+#navHExpand {
+    width:23.84%;
+    /* [Height] SETTING CHANGED BY JS*/
+    margin-top:0.2%;
+    margin-left:75%;
+    padding:0.2%;
+    float:right;
+    position:absolute;
+    z-index:4;
+
+   /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+
+    background-color:#C4D7ED; /* LIGHT BLUE */
+    
+    /* */
+    border: 2px dashed #ff0000;
+}
+
+/*++ CLASS END ++*/
+
+/***+++++ NAV EXPAND END ***+++++/
+
+/**+++ NAV HIDE ON LOAD +++**/
+.hidden {
+    display:none;
+}
+
+.show {
+    display:inline-block;
+}
+
+/**+++ NAV HIDE ON LOAD END +++**/
+
+/** NAV CLASS END**/
+
+/*** NAV FINISH **/
+
+/***** HEADER FINISH *****/
+
+/* HTML */
+html {
+
+/* COLOR */
+ background-color:#f9f9f9; /*OFF WHITE*/
+}
+
+/***** ARTICLE *****/
+article {
+    height:75%;
+
+    /* colors */
+    background-color:#f9f9f9; /*OFF WHITE*/
+
+    /* */
+    border: 2px dashed red;
+    
+
+    
+}
+
+/*****++= MAP OVERLAY =++*****/
+.mapKey h4 {
+    font-family:'Lato';
+    color:#f9f9f9; /* off white*/
+    font-size:1.2vw;
+    padding-bottom:0.5%;
+
+}
+
+/***+ EVENT OVERLAY +***/
+.earthquake {
+    width:50px;
+    height:50px;
+    position:absolute;
+    z-index:1;
+    margin-top:27.5%;
+    margin-left:60%;
+    
+    /* */
+   /* border:1px dotted #000000;  BLACK */
+}
+
+.flood {
+
+    /* */
+}
+
+.hurricane {
+
+    /* */
+}
+
+.tornado {
+
+    /* */
+}
+
+.fire {
+
+    /* */
+}
+
+
+/***+ EVENT OVERLAY END +***/
+
+/**** MAP KEY ****/
+.mapKey {
+    /* height:20vh;*/
+    height:auto;
+    /* width:17vw;*/
+    width:22.5%;
+    padding:1%;
+       
+    margin-left:54.5vw;
+    margin-left:50.5%;
+    margin-top:55vh;
+    position:absolute;
+    overflow:hidden;
+    z-index:1; /* SETS POS ON Z*/
+    
+    /*BORDER*/
+    /*L*/
+    border-top-left-radius:20px;
+    border-top-left-radius:0.6em;
+    border-bottom-left-radius:0.2em;
+    /*R*/
+    border-top-right-radius:20px;
+    border-top-right-radius:0.6em;
+    border-bottom-right-radius:0.2em;
+
+    /*COLOR FILL*/
+    background-color:#183152; /* WHITE*/
+    background-color:rgba(24,49,82,0.95);
+
+    /* */
+    border:dotted 2px #f500ff;  /* PINK */
+}
+
+/*** MAP KEY TABLE ***/
+
+table {
+    margin:0.2%;
+    padding:0.2%;
+    width:100%;
+
+    /* */
+    border:1px solid #0026ff;  /* BLUE*/
+}
+
+tr {
+
+   /* */
+   border: 1px solid green;
+}
+
+td {
+    
+   
+    border: 1px solid #4cff00; /* BRIGHT GREEN */
+}
+
+/* IMG KEY */
+.imgKeyColor {
+    margin-left:2vw;
+    margin-left:30%;
+}
+
+/* IMAGE ID FOR COLORS SIZING [NEEDS TO BE MADE RESPONCIVE P3]*/
+#imgColorSize {
+    height:40px;
+    height:2.500em;
+}
+
+/* IMAGE CLASS FOR DISASTERS */
+.imgKeyDisasterCode {
+    margin-left:3vw;
+    margin-left:30%;
+}
+
+/* DISASTER EVENT IMG SIZE */
+#imgDisasterEvent {
+    height:40px;
+    height:2.500em;
+}
+
+
+/* IMG KEY END */
+/* DANGER LEVEL */
+.mapKeysEvents {
+    height:auto;
+    width:100%;
+    margin-top:0.5%;
+    display:inline-block;
+    overflow:hidden;
+
+    /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+
+    background-color:#C4D7ED; /*LIGHT BLUE*/
+    
+    /* */
+    border:1px dotted #ff0000; /* RED */
+}
+
+/**** MAP KEY END ****/
+
+/*****++= MAP OVERLAY END =++*****/
+
+
+/**** GOOGLE API ****/
+
+/** ID **/
+
+#mainContainerApi {
+    width:auto;
+    height:100%;
+    /*overflow:hidden;*/ 
+
+    /* */
+    border:2px dashed #23a0c2; /* LIGHT BLUE */
+
+}
+
+#googleAPI {
+    width: auto;
+    height: 83.2vh; /* % DOES NOT WORK*/
+    overflow:hidden;
+
+    /* */
+    border: 1px solid orange;
+}
+
+/*** ID END ***/
+
+/** CLASS **/
+.googleContainer {
+    overflow:hidden;
+    width:auto;
+    height:100%;
+    
+    
+    /* */
+    border:2px dashed black;
+
+}
+
+
+
+
+
+/** CLASS END **/
+
+/**** GOOGLE API END ****/
+
+/*** BOOTSTRAP EDIT ***/
+
+
+
+/*** ID ***/
+
+
+
+/*** ID END ***/
+
+/** CLASS **/
+
+.container-fluid {
+/* overflow:hidden;*/
+padding:0.2%;
+
+/**/
+border:2px solid #7000ff; /* PURPLE*/
+}
+
+
+/** CLASS END **/
+
+
+/*** BOOTSTRAP EDIT END ***/
+
+
+
+/***** ARTICLE END *****/
+
+/***** FOOTER *****/
+footer {
+    width:100%;
+    height:auto;
+    margin:auto;
+
+   /*BORDER*/
+    /*L*/
+    border-bottom-left-radius:0.6em;
+    border-top-left-radius:0.2em;
+    /*R*/
+    border-bottom-right-radius:0.6em;
+    border-top-right-radius:0.2em;
+	
+    background-color:#183152; /*DARK BLUE */
+
+    
+    /**/
+   border: 2px dashed blue;
+}
+
+footer p {
+  text-align:right;
+  margin-top:1%;
+  color:#f9f9f9;
+}
+
+/*** ID ***/
+#footerDiv {
+    width:100%;
+    height:6vw;
+    margin:inherit;
+
+
+    
+    /**/
+   border:5px solid #fffa00; /*YELLOW*/
+}
+
+/*** ID END ***/
+
+/*** CLASS ***/
+
+/*** CLASS END ***/
+
+/***** FOOTER END *****/
+
+
+/*** INDEX STYLE END ***/
