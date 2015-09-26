@@ -129,7 +129,7 @@ function initMap() {
 
     /*++++ TAUMARUNI ++++*/
     var marker = new google.maps.Marker({
-        position: taumarunui, //position of weighpoint       
+        position: taumarunui, //position of weighpoint
         icon: './media/img/mapKeys/event/light/earthquakeL.png',
         map: map
         
