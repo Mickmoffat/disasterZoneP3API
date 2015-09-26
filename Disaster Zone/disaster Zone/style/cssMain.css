@@ -901,7 +901,8 @@ td {
 /* DISASTER EVENT IMG SIZE */
 #imgDisasterEvent {
     height:40px;
-    height:2.500em;
+    height:auto;
+    width:2.600em;
 }
 
 
