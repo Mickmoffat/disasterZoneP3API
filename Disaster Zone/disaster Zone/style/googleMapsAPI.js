@@ -2,7 +2,6 @@
 
 /*** CUSTOM SETTINGS ***/
 var map;
-//LOAD FONT
 
 
 /** CUSTOM UI ELEMENTS  START **/
@@ -23,10 +22,7 @@ function CenterControl(controlDiv, map) {
     controlUI.style.borderBottomRightRadius = '0.2em';
 
     controlUI.style.padding = '2%';
-    
     controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
-
-
     controlUI.style.cursor = 'pointer'; //sets custom pointers
    
     controlUI.style.textAlign = 'left'; //sets text alignment
@@ -48,8 +44,6 @@ function CenterControl(controlDiv, map) {
     keyTitleText.style.paddingLeft = '5px'; //sets L padding
     keyTitleText.style.paddingRight = '5px'; //sets R padding
 
-    
-    
     keyTitleText.innerHTML = '<h4>Key</h4>'; //sets text
     controlUI.appendChild(keyTitleText);
 
@@ -109,9 +103,10 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.TERRAIN, //sets terrain view
         
         center: { lat: -25.363882, lng: 131.044922 } //starting NZ
-
-
     });
+
+    /* GEOLOCATION */
+
 
     /*++ CUSTOM UI START ++*/
   // Create the DIV to hold the control and call the CenterControl() constructor
@@ -134,8 +129,9 @@ function initMap() {
 
     /*++++ TAUMARUNI ++++*/
     var marker = new google.maps.Marker({
-        position: taumarunui, //position of weighpoint
+        position: taumarunui, //position of weighpoint       
         map: map
+        
     });
 
     /*+++ PERTH +++*/
