@@ -2,32 +2,52 @@
 
 /*** CUSTOM SETTINGS ***/
 var map;
+//LOAD FONT
+
 
 /** CUSTOM UI ELEMENTS  START **/
 function CenterControl(controlDiv, map) {
 
-    // Set CSS for the control border.
-    var controlUI = document.createElement('div');
-    controlUI.style.backgroundColor = '#fff';
-    controlUI.style.border = '2px solid #fff';
-    controlUI.style.borderRadius = '3px';
-    controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-    controlUI.style.cursor = 'pointer';
-    controlUI.style.marginBottom = '22px';
-    controlUI.style.textAlign = 'center';
-    controlUI.title = 'Click to recenter the map';
+    //MAIN CUSTOM UI CONTAINER
+    var controlUI = document.createElement('div'); //creates div element
+    controlUI.style.backgroundColor = '#fff'; //sets background color
+    controlUI.style.border = '2px solid #fff'; //sets border style
+    controlUI.style.borderRadius = '3px'; //sets border radius
+    controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
+    controlUI.style.cursor = 'pointer'; //sets custom pointers
+    controlUI.style.marginBottom = '22px'; //sets margin
+    controlUI.style.textAlign = 'left'; //sets text alignment
+    controlUI.style.width = '400px'; //sets width
+    controlUI.style.height = '400px'; //sets height
+    controlUI.title = 'Click to recenter the map'; //hover text
+    controlUI.style.marginRight = '2%';
     controlDiv.appendChild(controlUI);
 
+    /*++ CUSTOM UI KEY ++*/
     // Set CSS for the control interior.
-    var controlText = document.createElement('div');
-    controlText.style.color = 'rgb(25,25,25)';
-    controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-    controlText.style.fontSize = '16px';
-    controlText.style.lineHeight = '38px';
-    controlText.style.paddingLeft = '5px';
-    controlText.style.paddingRight = '5px';
-    controlText.innerHTML = 'Center Map';
+    var controlText = document.createElement('div'); //creates div element
+    controlText.style.color = 'rgb(25,25,25)'; //sets text color
+    controlText.style.backgroundColor = '#2e81ef'; //sets background color
+    controlText.style.fontFamily = 'lato'; //sets font family
+    controlText.style.fontSize = '16px'; //sets font size
+    controlText.style.lineHeight = '38px'; //sets line height
+    controlText.style.paddingLeft = '5px'; //sets L padding
+    controlText.style.paddingRight = '5px'; //sets R padding
+    
+    controlText.innerHTML = 'Key'; //sets text
     controlUI.appendChild(controlText);
+
+    /*++ CUSTOM UI KEY CONTENT ALERT LEVEL ++*/
+    var keyText = document.createElement('div'); //creates div element
+    keyText.style.color = 'rgb(25,25,25)'; //sets text color
+    keyText.style.backgroundColor = '#ff8746'; //sets background color
+    keyText.style.fontFamily = 'lato'; //sets font family
+    keyText.style.fontSize = '16px'; //sets font size
+    keyText.style.lineHeight = '38px'; //sets line height
+    keyText.style.paddingLeft = '5px'; //sets L padding
+    keyText.style.paddingRight = '5px'; //sets R padding
+    keyText.innerHTML = 'Severe Earthquake </br> Strong </br> Moderate </br> Light'; //sets text
+    controlUI.appendChild(keyText);
 
     
 
@@ -76,11 +96,11 @@ function initMap() {
     /*++ CUSTOM UI START ++*/
   // Create the DIV to hold the control and call the CenterControl() constructor
   // passing in this DIV.
-  var centerControlDiv = document.createElement('div');
+  var centerControlDiv = document.createElement('div'); //creates new element 
   var centerControl = new CenterControl(centerControlDiv, map);
 
   centerControlDiv.index = 1;
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
+  map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
     /*++ CUSTOM UI END ++*/
 
 

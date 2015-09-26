@@ -855,16 +855,15 @@ article {
 
 /***+ EVENT OVERLAY END +***/
 
-/**** MAP KEY ****/
+/**** MAP KEY [FIX]****/
 .mapKey {
-    /* height:20vh;*/
     height:auto;
-    /* width:17vw;*/
     width:22.5%;
     padding:1%;
        
     margin-left:54.5vw;
     margin-left:50.5%;
+    margin-left:200.5vw; /*PUSING OFF SCREEN FOR API*/
     margin-top:55vh;
     position:absolute;
     overflow:hidden;
