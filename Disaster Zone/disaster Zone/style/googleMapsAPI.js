@@ -17,39 +17,45 @@ function CenterControl(controlDiv, map) {
     controlUI.style.cursor = 'pointer'; //sets custom pointers
     controlUI.style.marginBottom = '22px'; //sets margin
     controlUI.style.textAlign = 'left'; //sets text alignment
-    controlUI.style.width = '400px'; //sets width
-    controlUI.style.height = '400px'; //sets height
-    controlUI.title = 'Click to recenter the map'; //hover text
+    controlUI.style.width = '20vw'; //sets width
+    
+    
     controlUI.style.marginRight = '2%';
     controlDiv.appendChild(controlUI);
 
     /*++ CUSTOM UI KEY ++*/
     // Set CSS for the control interior.
-    var controlText = document.createElement('div'); //creates div element
-    controlText.style.color = 'rgb(25,25,25)'; //sets text color
-    controlText.style.backgroundColor = '#2e81ef'; //sets background color
-    controlText.style.fontFamily = 'lato'; //sets font family
-    controlText.style.fontSize = '16px'; //sets font size
-    controlText.style.lineHeight = '38px'; //sets line height
-    controlText.style.paddingLeft = '5px'; //sets L padding
-    controlText.style.paddingRight = '5px'; //sets R padding
+    var keyTitleText = document.createElement('div'); //creates div element
+    keyTitleText.style.color = 'rgb(25,25,25)'; //sets text color
+    keyTitleText.style.backgroundColor = '#2e81ef'; //sets background color
+    keyTitleText.style.fontFamily = 'lato'; //sets font family
+    keyTitleText.style.fontSize = '16px'; //sets font size
+    keyTitleText.style.lineHeight = '38px'; //sets line height
+    keyTitleText.style.paddingLeft = '5px'; //sets L padding
+    keyTitleText.style.paddingRight = '5px'; //sets R padding
+
     
-    controlText.innerHTML = 'Key'; //sets text
-    controlUI.appendChild(controlText);
+    
+    keyTitleText.innerHTML = '<h4>Key</h4>'; //sets text
+    controlUI.appendChild(keyTitleText);
 
     /*++ CUSTOM UI KEY CONTENT ALERT LEVEL ++*/
-    var keyText = document.createElement('div'); //creates div element
-    keyText.style.color = 'rgb(25,25,25)'; //sets text color
-    keyText.style.backgroundColor = '#ff8746'; //sets background color
-    keyText.style.fontFamily = 'lato'; //sets font family
-    keyText.style.fontSize = '16px'; //sets font size
-    keyText.style.lineHeight = '38px'; //sets line height
-    keyText.style.paddingLeft = '5px'; //sets L padding
-    keyText.style.paddingRight = '5px'; //sets R padding
-    keyText.innerHTML = 'Severe Earthquake </br> Strong </br> Moderate </br> Light'; //sets text
-    controlUI.appendChild(keyText);
+    var alertLevelText = document.createElement('div'); //creates div element
+    alertLevelText.style.color = 'rgb(25,25,25)'; //sets text color
+    alertLevelText.style.backgroundColor = '#ff8746'; //sets background color
+    alertLevelText.style.fontFamily = 'lato'; //sets font family
+    alertLevelText.style.fontSize = '16px'; //sets font size
+    alertLevelText.style.lineHeight = '38px'; //sets line height
+    alertLevelText.style.paddingLeft = '5px'; //sets L padding
+    alertLevelText.style.paddingRight = '5px'; //sets R padding
 
-    
+    alertLevelText.style.width = '100%';
+    alertLevelText.style.overflow = 'hidden';
+    alertLevelText.style.display = 'inline-block';
+    alertLevelText.innerHTML = '<table><tr><td><h5>Severe</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/severe.jpg"></td><td>&nbsp;</td><td><h5>Earthquake</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/earthquake.png"></td></tr><tr><td><h5>Strong</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/strong.jpg"></td><td>&nbsp;</td><td><h5>Flood</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/flood.png"></td></tr><tr><td><h5>Moderate</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/moderate.jpg"></td><td>&nbsp;</td><td><h5>Hurricane</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/hurricane.png"></td></tr><tr><td><h5>Light</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/light.jpg"></td><td>&nbsp;</td><td><h5>Tornado</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/tornado.png"></td></tr><tr><td><h5>Weak</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/dangerLevels/weak.jpg"></td><td>&nbsp;</td><td><h5>Fire</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/fire.png"></td></tr></table>';//sets text
+    controlUI.appendChild(alertLevelText);
+
+
 
 }
 
