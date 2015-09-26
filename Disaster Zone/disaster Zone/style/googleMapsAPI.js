@@ -60,7 +60,7 @@ function CenterControl(controlDiv, map) {
     alertLevelText.style.width = '100%';
     alertLevelText.style.overflow = 'hidden';
     alertLevelText.style.display = 'inline-block';
-    alertLevelText.innerHTML = '<table><tr><td><h5>Severe</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/severe.jpg"></td><td>&nbsp;</td><td><h5>Earthquake</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/earthquake.png"></td></tr><tr><td><h5>Strong</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/strong.jpg"></td><td>&nbsp;</td><td><h5>Flood</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/flood.png"></td></tr><tr><td><h5>Moderate</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/moderate.jpg"></td><td>&nbsp;</td><td><h5>Hurricane</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/hurricane.png"></td></tr><tr><td><h5>Light</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/light.jpg"></td><td>&nbsp;</td><td><h5>Tornado</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/tornado.png"></td></tr><tr><td><h5>Weak</h5></td><td><img class="imgKeyColor" id="imgDisasterEvent" src="./media/img/mapKeys/dangerLevels/weak.jpg"></td><td>&nbsp;</td><td><h5>Fire</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/event/fire.png"></td></tr></table>';//sets text
+    alertLevelText.innerHTML = '<table><tr><td><h5>Severe</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/severe.jpg"></td><td>&nbsp;</td><td><h5>Earthquake</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/earthquake.png"></td></tr><tr><td><h5>Strong</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/strong.jpg"></td><td>&nbsp;</td><td><h5>Flood</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/flood.png"></td></tr><tr><td><h5>Moderate</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/moderate.jpg"></td><td>&nbsp;</td><td><h5>Hurricane</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/hurricane.png"></td></tr><tr><td><h5>Light</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/light.jpg"></td><td>&nbsp;</td><td><h5>Tornado</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/tornado.png"></td></tr><tr><td><h5>Weak</h5></td><td><img class="imgKeyColor" id="imgDisasterEvent" src="./media/img/mapKeys/dangerLevels/weak.jpg"></td><td>&nbsp;</td><td><h5>Fire</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/fire.png"></td></tr></table>';//sets text
     controlUI.appendChild(alertLevelText);
 
 
@@ -130,7 +130,7 @@ function initMap() {
     /*++++ TAUMARUNI ++++*/
     var marker = new google.maps.Marker({
         position: taumarunui, //position of weighpoint       
-        icon: './media/img/mapKeys/event/earthquake.png',
+        icon: './media/img/mapKeys/event/light/earthquakeL.png',
         map: map
         
     });
@@ -138,28 +138,28 @@ function initMap() {
     /*+++ PERTH +++*/
     var marker = new google.maps.Marker({
         position: perth, //position of weighpoint
-        icon: './media/img/mapKeys/event/fire.png',
+        icon: './media/img/mapKeys/event/severe/fireS.png',
         map: map
     });
 
     /*++ CHIANG RAI ++*/
     var marker = new google.maps.Marker({
         position: chiangRai, //position of weighpoint
-        icon: './media/img/mapKeys/event/flood.png',
+        icon: './media/img/mapKeys/event/strong/floodST.png',
         map: map
     });
 
     /*+ ILLIONIS +*/
     var marker = new google.maps.Marker({
         position: illinois,//position of weighpoint
-        icon: './media/img/mapKeys/event/tornado.png',
+        icon: './media/img/mapKeys/event/moderate/tornadoM.png',
         map:map
     });
 
     /* BRAZIL */
     var marker = new google.maps.Marker({
         position: brazil,//position of weighpoint
-        icon: './media/img/mapKeys/event/hurricane.png',
+        icon: './media/img/mapKeys/event/weak/hurricaneW.png',
         map: map
     });
 }
