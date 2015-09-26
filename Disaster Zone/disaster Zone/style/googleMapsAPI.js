@@ -131,9 +131,10 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: taumarunui, //position of weighpoint
         icon: './media/img/mapKeys/event/light/earthquakeL.png',
+        animation:google.maps.Animation.BOUNCE,
         map: map
-        
     });
+    marker.addListener('click', toggleBounce);
 
     /*+++ PERTH +++*/
     var marker = new google.maps.Marker({
@@ -162,6 +163,14 @@ function initMap() {
         icon: './media/img/mapKeys/event/weak/hurricaneW.png',
         map: map
     });
+}
+
+function toggleBounce() {
+    if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+    } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
 }
 
 
