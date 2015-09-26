@@ -856,36 +856,6 @@ article {
 /***+ EVENT OVERLAY END +***/
 
 /**** MAP KEY [FIX]****/
-.mapKey {
-    height:auto;
-    width:22.5%;
-    padding:1%;
-       
-    margin-left:54.5vw;
-    margin-left:50.5%;
-    margin-left:200.5vw; /*PUSING OFF SCREEN FOR API*/
-    margin-top:55vh;
-    position:absolute;
-    overflow:hidden;
-    z-index:1; /* SETS POS ON Z*/
-    
-    /*BORDER*/
-    /*L*/
-    border-top-left-radius:20px;
-    border-top-left-radius:0.6em;
-    border-bottom-left-radius:0.2em;
-    /*R*/
-    border-top-right-radius:20px;
-    border-top-right-radius:0.6em;
-    border-bottom-right-radius:0.2em;
-
-    /*COLOR FILL*/
-    background-color:#183152; /* WHITE*/
-    background-color:rgba(24,49,82,0.95);
-
-    /* */
-    border:dotted 2px #f500ff;  /* PINK */
-}
 
 /*** MAP KEY TABLE ***/
 

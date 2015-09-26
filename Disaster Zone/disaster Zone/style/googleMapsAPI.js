@@ -10,17 +10,31 @@ function CenterControl(controlDiv, map) {
 
     //MAIN CUSTOM UI CONTAINER
     var controlUI = document.createElement('div'); //creates div element
-    controlUI.style.backgroundColor = '#fff'; //sets background color
-    controlUI.style.border = '2px solid #fff'; //sets border style
-    controlUI.style.borderRadius = '3px'; //sets border radius
+    controlUI.style.backgroundColor = '#183152'; //sets background color
+    controlUI.style.backgroundColor = 'rgba(24,49,82,0.95)';
+
+    /* BORDER*/
+    /*L*/
+    controlUI.style.borderTopLeftRadius = '0.6em';
+    controlUI.style.borderBottomLeftRadius = '0.2em';
+    /*R*/
+    controlUI.style.borderTopRightRadius = '20px';
+    controlUI.style.borderTopRightRadius = '0.6em';
+    controlUI.style.borderBottomRightRadius = '0.2em';
+
+    controlUI.style.padding = '2%';
+    
     controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
+
+
     controlUI.style.cursor = 'pointer'; //sets custom pointers
-    controlUI.style.marginBottom = '22px'; //sets margin
+   
     controlUI.style.textAlign = 'left'; //sets text alignment
-    controlUI.style.width = '20vw'; //sets width
+    controlUI.style.width = '20vw'; //sets width [NEEDS FIXING]
     
-    
+    //MARGIN
     controlUI.style.marginRight = '2%';
+    controlUI.style.marginBottom = '2%'; //sets margin
     controlDiv.appendChild(controlUI);
 
     /*++ CUSTOM UI KEY ++*/
@@ -42,7 +56,7 @@ function CenterControl(controlDiv, map) {
     /*++ CUSTOM UI KEY CONTENT ALERT LEVEL ++*/
     var alertLevelText = document.createElement('div'); //creates div element
     alertLevelText.style.color = 'rgb(25,25,25)'; //sets text color
-    alertLevelText.style.backgroundColor = '#ff8746'; //sets background color
+    alertLevelText.style.backgroundColor = '#C4D7ED'; //sets background color
     alertLevelText.style.fontFamily = 'lato'; //sets font family
     alertLevelText.style.fontSize = '16px'; //sets font size
     alertLevelText.style.lineHeight = '38px'; //sets line height
