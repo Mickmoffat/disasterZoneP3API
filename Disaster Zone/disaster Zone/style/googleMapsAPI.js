@@ -151,8 +151,16 @@ function initMap() {
    '</div>';
 
     /****_ ILLIONIS _****/
+  var illionisContentText = '<div id ="content">' + '<div id="siteNotice">' +
+'</div>' + '<h3 id="" class="">Illinois Tornado Warning</h3>' + '<ul style="list-style-type:none;"><li>Danger Level: Moderate</li><li>Damage Reports: None</li></ul>' +
 
-    /*****_ BRAZIL _*****/  
+  '</div>';
+
+    /*****_ BRAZIL _*****/
+  var brazilContentText = '<div id ="content">' + '<div id="siteNotice">' +
+'</div>' + '<h3 id="" class="">Brazil  Hurricane Warning</h3>' + '<ul style="list-style-type:none;"><li>Danger Level: Weak</li><li>Damage Reports: None</li></ul>' +
+
+  '</div>';
 
     /*__ VARABLES __*/
 
@@ -228,20 +236,29 @@ function initMap() {
     /* CLICK DISPLAY INFOWINDOW */
     google.maps.event.addListener(marker, 'click', function () {
         this.infowindow.open(map, this);
-
     });
 
     /*+ ILLIONIS +*/
     var marker = new google.maps.Marker({
         position: illinois,//position of weighpoint
         icon: './media/img/mapKeys/event/moderate/tornadoM.png',
+        title: 'Illionis',
+        infowindow: illionisInfoWindow,
         map:map
     });
+
+    /* CLICK DISPLAY INFOWINDOW */
+    google.maps.event.addListener(marker, 'click', function () {
+        this.infowindow.open(map, this);
+    });
+
 
     /* BRAZIL */
     var marker = new google.maps.Marker({
         position: brazil,//position of weighpoint
         icon: './media/img/mapKeys/event/weak/hurricaneW.png',
+        title: 'Brazil',
+        infowindow: brazilInfoWindow,
         map: map
     });
 
