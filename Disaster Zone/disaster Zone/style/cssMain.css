@@ -34,7 +34,7 @@ h2 {
 /* ALERT  [DISABLED REPLACED BY IMG]*/
 h3 {
     font-family:'Lato';
-    color:rgba(29, 29, 29, 0.54);
+    color:#183152;
     font-size:42px;    
     font-size:2.625em;
     font-size:1.8vw;
@@ -58,7 +58,7 @@ h6 {
 h4 {
     font-family:'Lato';
     color:#183152; /* DARK BLUE*/
-    font-size:0.9vw;
+    font-size:1.3vw;
     margin:0.2%;
     padding:0.2%;
 
@@ -1058,3 +1058,30 @@ footer p {
 
 
 /*** INDEX STYLE END ***/
+
+/*** GOOGLE MAPS API STYLE ***/
+/* ID */
+
+/* CLASS */
+.taumarunuiContentText {
+width:400px;
+background-color:orange;
+}
+
+.placeholderDiv {
+position:absolute;
+margin-top:10%;
+margin-left:40%;
+
+height:auto;
+
+background-color:white;
+z-index:4;
+}
+
+.popupIMGStyle {
+width:20%;
+height:auto;
+display:inline-block;
+}
+
