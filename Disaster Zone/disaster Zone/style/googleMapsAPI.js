@@ -91,7 +91,7 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('googleAPI'), {
 
         //MAP OPTIONS
-        zoom: 4, //sets zoom level
+        zoom: 3, //sets zoom level
         draggable: true, //disable drag
         zoomControl: true, //disable or enable zoom
         zoomControlOptions: {
