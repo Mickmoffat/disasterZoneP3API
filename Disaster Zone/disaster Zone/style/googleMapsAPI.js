@@ -62,10 +62,8 @@ function CenterControl(controlDiv, map) {
     alertLevelText.style.display = 'inline-block';
     alertLevelText.innerHTML = '<table><tr><td><h5>Severe</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/severe.jpg"></td><td>&nbsp;</td><td><h5>Earthquake</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/earthquake.png"></td></tr><tr><td><h5>Strong</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/strong.jpg"></td><td>&nbsp;</td><td><h5>Flood</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/flood.png"></td></tr><tr><td><h5>Moderate</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/moderate.jpg"></td><td>&nbsp;</td><td><h5>Hurricane</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/hurricane.png"></td></tr><tr><td><h5>Light</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/light.jpg"></td><td>&nbsp;</td><td><h5>Tornado</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/tornado.png"></td></tr><tr><td><h5>Weak</h5></td><td><img class="imgKeyColor" id="imgDisasterEvent" src="./media/img/mapKeys/dangerLevels/weak.jpg"></td><td>&nbsp;</td><td><h5>Fire</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/fire.png"></td></tr></table>';//sets text
     controlUI.appendChild(alertLevelText);
-
-
-
 }
+
 
 /*** INITAL MAP ***/
 
@@ -87,6 +85,9 @@ function initMap() {
     /*HURRICANE BRAZIL*/
     var brazil = new google.maps.LatLng(-15.4700, -47.5500); //pos
 
+    /* CLICK SHOW JUMP */
+    var name = "NSCR1";
+
     /* SET MAP OPTIONS */
     var map = new google.maps.Map(document.getElementById('googleAPI'), {
 
@@ -104,6 +105,7 @@ function initMap() {
         
         center: { lat: -25.363882, lng: 131.044922 } //starting NZ
     });
+
 
     /* GEOLOCATION */
 
@@ -205,8 +207,11 @@ function initMap() {
     /* CLICK DISPLAY INFOWINDOW */
     google.maps.event.addListener(marker, 'click', function () {
         this.infowindow.open(map, this);
-
     });
+
+   
+
+
     //marker.addListener('click', toggleBounce);
 
     /*+++ PERTH +++*/
@@ -276,6 +281,8 @@ function toggleBounce() {
         marker.setAnimation(google.maps.Animation.BOUNCE);
     }
 }
+
+window.onload = loadScript;
 
 
     

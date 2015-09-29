@@ -679,7 +679,12 @@ input[type=number]{
       /**/
     border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
+/**+ HIDDEN ELEMENT CLASS +**/
+#hiddenElement {
+    height:10%;
+    overflow:hidden;
 
+}
 
 /** NEWS EXPAND CONTENT END **/
 
