@@ -86,7 +86,17 @@ function initMap() {
     /*HURRICANE BRAZIL*/
     var brazil = new google.maps.LatLng(-15.4700, -47.5500); //pos
 
+    /******* ARRAY POS METHOD *******/
+    var mapPositions = [
+        new google.maps.LatLng(-38.8833, 175.2617), //[0] TAUMARUNI EARTH QUAKE NZ
+        new google.maps.LatLng(-31.9522, 115.8589), //[1] PERTH BUSH FIRE AUS
+        new google.maps.LatLng(19.9094, 99.8275), //[2] CHIANG RAI FLOOD THAILAND
+        new google.maps.LatLng(40.0000, -89.0000), //[3] ILLINOIS TORNADO USA
+        new google.maps.LatLng(-15.4700, -47.5500), //[4] HURRICANE BRAZIL
+    ]
+
     /* CLICK SHOW JUMP */
+    
     var name = "NSCR1";
 
     /* SET MAP OPTIONS */
@@ -108,7 +118,7 @@ function initMap() {
     });
 
 
-    /* GEOLOCATION */
+    /* GEOLOCATION 
 
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
@@ -135,11 +145,10 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setContent(browserHasGeolocation ?
                           'Error: The Geolocation service failed.' :
                           'Error: Your browser doesn\'t support geolocation.');
-}
+}*/
 
     /*++ CUSTOM UI START ++*/
-  // Create the DIV to hold the control and call the CenterControl() constructor
-  // passing in this DIV.
+
   var centerControlDiv = document.createElement('div'); //creates new element 
   var centerControl = new CenterControl(centerControlDiv, map);
 
@@ -192,12 +201,13 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   '</div>';
 
     /*__ VARABLES __*/
-
+  
     /*_TAUMARUNI EARTHQUAKE_*/
   var taumarunuiInfoWindow = new google.maps.InfoWindow({
       content: taumarunuiContentText,
       
   }); 
+
 
     /**_ PERTH _**/
   var perthInfoWindow = new google.maps.InfoWindow({
@@ -215,21 +225,28 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   });
 
 
-    /*****_ BRAZIL _*****/
+    /*****_ BRAZIL _****
   var brazilInfoWindow = new google.maps.InfoWindow({
+      content: brazilContentText,
+  }); */
+
+    /*****_ BRAZIL _*****/
+ var marker = mapPositions[0] = new google.maps.InfoWindow({
       content: brazilContentText,
   });
 
   
     /*++++ TAUMARUNI ++++*/
     var marker = new google.maps.Marker({
-        position: taumarunui, //position of weighpoint
+        position: mapPositions[0], //position of weighpoint 
         icon: './media/img/mapKeys/event/light/earthquakeL.png',
         //animation:google.maps.Animation.BOUNCE,
         title: 'Taumarunui', //display on hover
         infowindow: taumarunuiInfoWindow, //info window variable
         map: map
     });
+
+
 
     /* CLICK DISPLAY INFOWINDOW */
     google.maps.event.addListener(marker, 'click', function () {
@@ -243,7 +260,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
     /*+++ PERTH +++*/
     var marker = new google.maps.Marker({
-        position: perth, //position of weighpoint
+        position: mapPositions[1],
         icon: './media/img/mapKeys/event/severe/fireS.png',
         title: 'Perth', //display on hover
         infowindow: perthInfoWindow, //info window variable
@@ -258,7 +275,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
     /*++ CHIANG RAI ++*/
     var marker = new google.maps.Marker({
-        position: chiangRai, //position of weighpoint
+        position: mapPositions[2],
         icon: './media/img/mapKeys/event/strong/floodST.png',
         title: 'Chaiang Rai',
         infowindow: chiangRaiInfoWindow,
@@ -272,7 +289,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
     /*+ ILLIONIS +*/
     var marker = new google.maps.Marker({
-        position: illinois,//position of weighpoint
+        position: mapPositions[3],
         icon: './media/img/mapKeys/event/moderate/tornadoM.png',
         title: 'Illionis',
         infowindow: illionisInfoWindow,
@@ -287,7 +304,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
     /* BRAZIL */
     var marker = new google.maps.Marker({
-        position: brazil,//position of weighpoint
+        position: mapPositions[4],
         icon: './media/img/mapKeys/event/weak/hurricaneW.png',
         title: 'Brazil',
         infowindow: brazilInfoWindow,
@@ -301,6 +318,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     });
 }
 
+/* ANIMATION 
 function toggleBounce() {
     if (marker.getAnimation() !== null) {
         marker.setAnimation(null);
@@ -309,7 +327,8 @@ function toggleBounce() {
     }
 }
 
-window.onload = loadScript;
+window.onload = loadScript;*/
+
 
 
     
