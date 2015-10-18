@@ -28,6 +28,7 @@ function CenterControl(controlDiv, map) {
     controlUI.style.textAlign = 'left'; //sets text alignment
     controlUI.style.width = '20vw'; //sets width [NEEDS FIXING]
     
+    
     //MARGIN
     controlUI.style.marginRight = '2%';
     controlUI.style.marginBottom = '2%'; //sets margin
@@ -109,6 +110,32 @@ function initMap() {
 
     /* GEOLOCATION */
 
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            map.setCenter(pos);
+        }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+        });
+    } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false, infoWindow, map.getCenter());
+    }
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(browserHasGeolocation ?
+                          'Error: The Geolocation service failed.' :
+                          'Error: Your browser doesn\'t support geolocation.');
+}
 
     /*++ CUSTOM UI START ++*/
   // Create the DIV to hold the control and call the CenterControl() constructor
