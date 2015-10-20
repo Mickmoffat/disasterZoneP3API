@@ -1,17 +1,5 @@
 /**** GOOGLE MAPS API Disaster Zone MDDN201 P3 [2015] (300317288) ****/
 
-/*** CUSTOM SETTINGS ***/
-var map;
-
-/** NEW MAP METHOD **/
-var mapMarkersArray = [
-{},
-{},
-{},
-{},
-{},
-
-]
 
 /** CUSTOM UI ELEMENTS  START **/
 function CenterControl(controlDiv, map) {
@@ -111,14 +99,14 @@ var mapMarkers = [
            
 ];
 
-/**_IMAGE ICON ARRAY _**/
+/**_IMAGE ICON ARRAY _*
 var iconArray = [
     {"icon": './media/img/mapKeys/event/light/earthquakeL.png' }, //[0] TAUMARUNI EARTH QUAKE NZ
     {"icon": './media/img/mapKeys/event/severe/fireS.png' },      //[1] PERTH BUSH FIRE AUS
     {"icon": './media/img/mapKeys/event/strong/floodST.png' },    //[2] CHIANG RAI FLOOD THAILAND
     {"icon": './media/img/mapKeys/event/moderate/tornadoM.png' }, //[3] ILLINOIS TORNADO USA
     {"icon": './media/img/mapKeys/event/weak/hurricaneW.png' }    //[4]  HURRICANE BRAZIL
-];
+]; */
 
 
 window.onload = function () {
@@ -134,23 +122,19 @@ window.onload = function () {
         scrollwheel: false, //disables scroll wheel
         disableDefaultUI: true, //disables UI
         mapTypeId: google.maps.MapTypeId.TERRAIN, //sets terrain view
-        
+
         center: { lat: -25.363882, lng: 131.044922 } //starting NZ
     };
-   
+
     var infoWindow = new google.maps.InfoWindow(); //creates new infowindow for each marker
-   
+
     /* SET MAP OPTIONS */
-    var map = new google.maps.Map(document.getElementById('googleAPI'), {
+    var map = new google.maps.Map(document.getElementById('googleAPI'), mapOptions);
 
-        
-    });
 
-    
-    
-    //var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+
     var i = 0; // starting number
-    
+
     //function sets intival for each icon
     var interval = setInterval(function () {
 
@@ -172,7 +156,7 @@ window.onload = function () {
             google.maps.event.addListener(marker, "click", function (e) {
                 infoWindow.setContent(data.description);
                 infoWindow.open(map, marker);
-                    
+
             });
             //ADD IN BOUNCE HERE
 
@@ -225,19 +209,20 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
     /*++++_ DISASTER WEIGHPOINTS _++++*/
 
-    
-/* ANIMATION 
-function toggleBounce() {
-    if (marker.getAnimation() !== null) {
-        marker.setAnimation(null);
-    } else {
-        marker.setAnimation(google.maps.Animation.BOUNCE);
+
+    /* ANIMATION 
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
     }
-}
-
-window.onload = loadScript;*/
-
-
-
     
+    window.onload = loadScript;*/
 
+
+
+
+
+}
