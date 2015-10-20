@@ -74,6 +74,26 @@ function CenterControl(controlDiv, map) {
     alertLevelText.innerHTML = '<table><tr><td><h5>Severe</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/severe.jpg"></td><td>&nbsp;</td><td><h5>Earthquake</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/earthquake.png"></td></tr><tr><td><h5>Strong</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/strong.jpg"></td><td>&nbsp;</td><td><h5>Flood</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/flood.png"></td></tr><tr><td><h5>Moderate</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/moderate.jpg"></td><td>&nbsp;</td><td><h5>Hurricane</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/hurricane.png"></td></tr><tr><td><h5>Light</h5></td><td><img class="imgKeyColor" id="imgColorSize" src="./media/img/mapKeys/dangerLevels/light.jpg"></td><td>&nbsp;</td><td><h5>Tornado</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/tornado.png"></td></tr><tr><td><h5>Weak</h5></td><td><img class="imgKeyColor" id="imgDisasterEvent" src="./media/img/mapKeys/dangerLevels/weak.jpg"></td><td>&nbsp;</td><td><h5>Fire</h5></td><td><img class="imgKeyDisasterCode" id="imgDisasterEvent" src="./media/img/mapKeys/key/fire.png"></td></tr></table>';//sets text
     controlUI.appendChild(alertLevelText);
 
+    /* KEY UI END */
+
+}
+
+function newsControl(newsUIDiv, map) {
+    var newsUI = document.createElement('div');
+    newsUI.style.backgroundColor = '#C4D7ED';//sets background color
+    
+
+    newsUI.style.padding = '2%';
+    newsUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
+    newsUI.style.cursor = 'pointer'; //sets custom pointers
+    newsUI.style.textAlign = 'left'; //sets text alignment
+    newsUI.style.width = '20vw'; //sets width [NEEDS FIXING]
+
+
+    //MARGIN
+    newsUI.style.marginRight = '2%';
+    newsUI.style.marginBottom = '2%'; //sets margin
+    newsUIDiv.appendChild(newsUI);
 }
 
 
@@ -137,7 +157,7 @@ function initMap() {
             draggable: true, //disable drag
             zoomControl: true, //disable or enable zoom
             zoomControlOptions: {
-                position: google.maps.ControlPosition.LEFT_TOP
+                position: google.maps.ControlPosition.RIGHT_TOP
             },
             disableDoubleClickZoom: true, //disables zoom
             scrollwheel: false, //disables scroll wheel
@@ -148,19 +168,32 @@ function initMap() {
         };
 
         var infoWindow = new google.maps.InfoWindow(); //creates new infowindow for each marker
+        
 
-              
         var map = new google.maps.Map(document.getElementById("googleAPI"), mapOptions);
         var i = 0; // starting number
 
         /*++ CUSTOM UI START ++*/
 
+        /* MAP KEY */
         var centerControlDiv = document.createElement('div'); //creates new element 
         var centerControl = new CenterControl(centerControlDiv, map);
 
         centerControlDiv.index = 1;
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
-        /*++ CUSTOM UI END ++
+        /* MAP KEY */
+        
+
+
+        /* NEWS MAIN */
+        var newsUIDiv = document.createElement('div'); //creates new element 
+        var centerControl1 = new newsControl(newsUIDiv, map);
+
+        newsUIDiv.index = 1;
+        map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsUIDiv);
+
+        /* NEWS MAIN END */
+        /*++ CUSTOM UI END ++*/
 
 
         //function sets intival for each icon
@@ -170,11 +203,7 @@ function initMap() {
             var myLatlng = mapPositions[i]; //loads positions from Map position array
             var icon = iconArray[i]; //loads icon from array
             var showHide = newsItemShowArray[i]; //shows or hides news content
-
-            /*++ MAP UI ENTER  ++*/
-
-           
-            /*++ CUSTOM UI END ++*/
+            
 
             var marker = new google.maps.Marker({
                 position: myLatlng,
@@ -183,10 +212,6 @@ function initMap() {
                 icon: icon,
                 animation: google.maps.Animation.DROP
             });
-           
-
-            
-            
 
             /** SETS MARKER DESCRIPTION DESPLAY ON CLICK **/
             (function (marker, data) {
@@ -196,9 +221,7 @@ function initMap() {
                     infoWindow.setContent(data.description);
                     infoWindow.open(map, marker);
                     animation: google.maps.Animation.BOUCNE;
-                    
-
-                });
+              });
                 //ADD IN BOUNCE HERE
 
             })(marker, data);
@@ -210,13 +233,6 @@ function initMap() {
             }
         }, 4700 * 2); //intival time
     }
-
-
-
-
-    
-
-   
 }
 
 
