@@ -87,7 +87,9 @@ function newsControl(newsUIDiv, map) {
     newsUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
     newsUI.style.cursor = 'pointer'; //sets custom pointers
     newsUI.style.textAlign = 'left'; //sets text alignment
-    newsUI.style.width = '20vw'; //sets width [NEEDS FIXING]
+    newsUI.style.width = '23.5vw'; //sets width [NEEDS FIXING]
+    newsUI.style.height = '83.2vh'; //does not accept %
+    
 
 
     //MARGIN
