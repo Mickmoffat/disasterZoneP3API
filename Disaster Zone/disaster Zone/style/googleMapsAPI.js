@@ -2,16 +2,18 @@
 
 /*** CUSTOM SETTINGS ***/
 var map;
+var marker; //[not working]
 
-/** NEW MAP METHOD **/
-var mapMarkersArray = [
-{},
-{},
-{},
-{},
-{},
-
+/** NEWS EVENTS DISPLAY ARRAY **/
+var newsEventsArray = [
+0, //NZ
+1, //AUS
+2, //THAI
+3, //USA
+4 //BRAZIL
 ]
+/** NEW MAP METHOD **/
+
 
 /** CUSTOM UI ELEMENTS  START **/
 function CenterControl(controlDiv, map) {
@@ -87,6 +89,7 @@ function initMap() {
         new google.maps.LatLng(-15.4700, -47.5500), //[4] HURRICANE BRAZIL
     ]
 
+
     /******+ MARKERS ARRAY +******/
 
     var mapMarkers = [
@@ -118,23 +121,36 @@ function initMap() {
 
     ];
 
-    /**_IMAGE ICON ARRAY _**/
+    /**_IMAGE ICON ARRAY _**/ //NOT WORKING NEEDS FIXING
     var iconArray = [
-        { "icon": './media/img/mapKeys/event/light/earthquakeL.png' },  //[0] TAUMARUNI EARTH QUAKE NZ
-        { "icon": './media/img/mapKeys/event/severe/fireS.png' },      //[1] PERTH BUSH FIRE AUS
-        { "icon": './media/img/mapKeys/event/strong/floodST.png' },    //[2] CHIANG RAI FLOOD THAILAND
-        { "icon": './media/img/mapKeys/event/moderate/tornadoM.png' }, //[3] ILLINOIS TORNADO USA
-        { "icon": './media/img/mapKeys/event/weak/hurricaneW.png' }    //[4]  HURRICANE BRAZIL
+        './media/img/mapKeys/event/light/earthquakeL.png',  //[0] TAUMARUNI EARTH QUAKE NZ
+        './media/img/mapKeys/event/severe/fireS.png',      //[1] PERTH BUSH FIRE AUS
+        './media/img/mapKeys/event/strong/floodST.png',    //[2] CHIANG RAI FLOOD THAILAND
+        './media/img/mapKeys/event/moderate/tornadoM.png', //[3] ILLINOIS TORNADO USA
+        './media/img/mapKeys/event/weak/hurricaneW.png'    //[4]  HURRICANE BRAZIL
     ];
 
     window.onload = function () {
         var mapOptions = {
-            center: { lat: -25.363882, lng: 131.044922 },
-            zoom: 3,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+            //MAP OPTIONS
+            zoom: 3, //sets zoom level
+            draggable: true, //disable drag
+            zoomControl: true, //disable or enable zoom
+            zoomControlOptions: {
+                position: google.maps.ControlPosition.LEFT_TOP
+            },
+            disableDoubleClickZoom: true, //disables zoom
+            scrollwheel: false, //disables scroll wheel
+            disableDefaultUI: true, //disables UI
+            mapTypeId: google.maps.MapTypeId.TERRAIN, //sets terrain view
+
+            center: { lat: 1.4667, lng: -173.0333 } //starting Kiribati
         };
 
         var infoWindow = new google.maps.InfoWindow(); //creates new infowindow for each marker
+
+
+
 
         /* var infoWindow = new google.maps.InfoWindow({
              content: infoWindowContent
@@ -142,6 +158,16 @@ function initMap() {
 
         var map = new google.maps.Map(document.getElementById("googleAPI"), mapOptions);
         var i = 0; // starting number
+
+        /*++ CUSTOM UI START ++*/
+
+        var centerControlDiv = document.createElement('div'); //creates new element 
+        var centerControl = new CenterControl(centerControlDiv, map);
+
+        centerControlDiv.index = 1;
+        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
+        /*++ CUSTOM UI END ++*/
+
 
         //function sets intival for each icon
         var interval = setInterval(function () {
@@ -154,8 +180,13 @@ function initMap() {
                 position: myLatlng,
                 map: map,
                 title: data.title,
+                icon: icon,
                 animation: google.maps.Animation.DROP
             });
+           
+
+            
+            
 
             /** SETS MARKER DESCRIPTION DESPLAY ON CLICK **/
             (function (marker, data) {
@@ -164,6 +195,8 @@ function initMap() {
                 google.maps.event.addListener(marker, "click", function (e) {
                     infoWindow.setContent(data.description);
                     infoWindow.open(map, marker);
+                    animation: google.maps.Animation.BOUCNE;
+                    
 
                 });
                 //ADD IN BOUNCE HERE
@@ -177,7 +210,18 @@ function initMap() {
             }
         }, 4700 * 2); //intival time
     }
+    //ANIMATE MARKERS ON CLICK 
+    //[not working]
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
 }
+
+
 
 /* ANIMATION 
 function toggleBounce() {
