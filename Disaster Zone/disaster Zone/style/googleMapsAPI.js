@@ -21,7 +21,6 @@ function CenterControl(controlDiv, map) {
     var controlUI = document.createElement('div'); //creates div element
     controlUI.style.backgroundColor = '#183152'; //sets background color
     controlUI.style.backgroundColor = 'rgba(24,49,82,0.95)';
-
     /* BORDER*/
     /*L*/
     controlUI.style.borderTopLeftRadius = '0.6em';
@@ -30,15 +29,11 @@ function CenterControl(controlDiv, map) {
     controlUI.style.borderTopRightRadius = '20px';
     controlUI.style.borderTopRightRadius = '0.6em';
     controlUI.style.borderBottomRightRadius = '0.2em';
-
     controlUI.style.padding = '2%';
     controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
     controlUI.style.cursor = 'pointer'; //sets custom pointers
-   
     controlUI.style.textAlign = 'left'; //sets text alignment
     controlUI.style.width = '20vw'; //sets width [NEEDS FIXING]
-    
-    
     //MARGIN
     controlUI.style.marginRight = '2%';
     controlUI.style.marginBottom = '2%'; //sets margin
@@ -54,7 +49,6 @@ function CenterControl(controlDiv, map) {
     keyTitleText.style.lineHeight = '38px'; //sets line height
     keyTitleText.style.paddingLeft = '5px'; //sets L padding
     keyTitleText.style.paddingRight = '5px'; //sets R padding
-
     keyTitleText.innerHTML = '<h4>Key</h4>'; //sets text
     controlUI.appendChild(keyTitleText);
 
@@ -79,24 +73,32 @@ function CenterControl(controlDiv, map) {
 }
 
 function newsControl(newsUIDiv, map) {
+    /* MAIN NEWS UI */
     var newsUI = document.createElement('div');
     newsUI.style.backgroundColor = '#C4D7ED';//sets background color
-    
-
     newsUI.style.padding = '2%';
     newsUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
     newsUI.style.cursor = 'pointer'; //sets custom pointers
     newsUI.style.textAlign = 'left'; //sets text alignment
     newsUI.style.width = '23.5vw'; //sets width [NEEDS FIXING]
     newsUI.style.height = '83.2vh'; //does not accept %
-    
-
-
     //MARGIN
     newsUI.style.marginRight = '2%';
     newsUI.style.marginBottom = '2%'; //sets margin
     newsUIDiv.appendChild(newsUI);
+
+    /* MAIN NEWS UI END */
+
+    /* CONTENT ROW 1 NZ 
+    var earthQuakeUI = document.createElement('div');
+    earthQuakeUI.style.height = 'auto';
+    earthQuakeUI.innerHTML = '<div class="NSCR1">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'
+    earthQuakeUI.appendChild(earthQuakeUI); */
+
+    /* CONTENT ROW 1 NZ END */
 }
+
+
 
 
 /*** INITAL MAP ***/
@@ -185,16 +187,20 @@ function initMap() {
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(centerControlDiv);
         /* MAP KEY */
         
-
-
-        /* NEWS MAIN */
+        /***** NEWS MAIN ******/
         var newsUIDiv = document.createElement('div'); //creates new element 
         var centerControl1 = new newsControl(newsUIDiv, map);
-
-        newsUIDiv.index = 1;
+        newsUIDiv.index = 4;
         map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsUIDiv);
-
         /* NEWS MAIN END */
+
+        /***** NEWS CONTENT 1 *****
+        var newsUIDiv = document.createElement('div'); //creates new element 
+        var centerControl2 = new newsControl(earthQuakeUIDiv, map);
+        earthQuakeUIDiv.index = 4;
+        map.controls[google.maps.ControlPosition.LEFT_TOP].push(earthQuakeUIDiv); */
+
+
         /*++ CUSTOM UI END ++*/
 
 
