@@ -781,6 +781,10 @@ input[type=number]{
 .hidden {
     display:none;
 }
+/**HIDE NEWS ON LOAD*/
+#hidden {
+    display:none;
+}
 
 .show {
     display:inline-block;

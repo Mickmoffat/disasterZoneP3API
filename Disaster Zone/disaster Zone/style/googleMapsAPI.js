@@ -4,14 +4,6 @@
 var map;
 var marker; //[not working]
 
-/** NEWS EVENTS DISPLAY ARRAY **/
-var newsEventsArray = [
-0, //NZ
-1, //AUS
-2, //THAI
-3, //USA
-4 //BRAZIL
-]
 /** NEW MAP METHOD **/
 
 
@@ -175,6 +167,7 @@ function initMap() {
             var data = mapMarkers[i] //markers data from markers array
             var myLatlng = mapPositions[i]; //loads positions from Map position array
             var icon = iconArray[i]; //loads icon from array
+            
 
             var marker = new google.maps.Marker({
                 position: myLatlng,
@@ -210,7 +203,11 @@ function initMap() {
             }
         }, 4700 * 2); //intival time
     }
-    //ANIMATE MARKERS ON CLICK 
+
+
+
+
+    /* ANIMATE MARKERS ON CLICK */
     //[not working]
     function toggleBounce() {
         if (marker.getAnimation() !== null) {
