@@ -5,13 +5,6 @@ var map;
 var marker; //[not working]
 
 /** NEW MAP METHOD **/
-var newsItemShowArray = [
-0,
-1,
-2,
-3,
-4
-];
 
 
 /** CUSTOM UI ELEMENTS  START **/
