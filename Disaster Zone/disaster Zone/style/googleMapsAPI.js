@@ -187,6 +187,12 @@ function initMap() {
          
     ]
 
+    /** SETS MAIN NEWS UI TO AUTO SCROLL DOWN ON UPDATED NEWS **/
+
+    //$("div1").animate({ scrollTop: $("div1")[0].scrollHeight }, 1000);
+
+    /** AFTER WINDOW LOADS FUNCTION **/
+
     window.onload = function () {
         var mapOptions = {
             //MAP OPTIONS
@@ -270,6 +276,7 @@ var interval = setInterval(function () {
             if (newsShow === 4) {
                 $(".NSCR5").removeAttr("id");
             }
+
             (function (marker, data) {
 
                 //on click make maker set to description
