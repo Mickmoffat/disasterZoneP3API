@@ -65,7 +65,7 @@ function CenterControl(controlDiv, map) {
 
 }
 
-function newsControl(newsUIDiv, map) {
+function NewsControl(newsUIDiv, map) {
     /* MAIN NEWS UI */
     var newsUI = document.createElement('div');
     newsUI.style.backgroundColor = '#C4D7ED';//sets background color
@@ -85,12 +85,21 @@ function newsControl(newsUIDiv, map) {
     /* CONTENT ROW 1 NZ 
     var earthQuakeUI = document.createElement('div');
     earthQuakeUI.style.height = 'auto';
-    earthQuakeUI.innerHTML = '<div class="NSCR1">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'
+    //earthQuakeUI.innerHTML = '<div class="NSCR1">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'
     earthQuakeUI.appendChild(earthQuakeUI); */
 
     /* CONTENT ROW 1 NZ END */
 }
+//NEWS CONTENT ROW 1
+function NewsContentR1(newsContentR1UIDiv, map) {
+    var newsContentR1UI = document.createElement('div');
+    newsContentR1UI.style.height = '200px';
+    newsContentR1UI.style.width = '500px';
+    newsContentR1UI.style.background = '#ff0808';
+    //earthQuakeUI.innerHTML = '<div class="NSCR1">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'
+    newsContentR1UIDiv.appendChild(newsContentR1UI);
 
+}
 
 
 
@@ -182,16 +191,16 @@ function initMap() {
         
         /***** NEWS MAIN ******/
         var newsUIDiv = document.createElement('div'); //creates new element 
-        var centerControl1 = new newsControl(newsUIDiv, map);
+        var newsControl = new NewsControl(newsUIDiv, map);
         newsUIDiv.index = 4;
         map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsUIDiv);
         /* NEWS MAIN END */
 
-        /***** NEWS CONTENT 1 *****
-        var newsUIDiv = document.createElement('div'); //creates new element 
-        var centerControl2 = new newsControl(earthQuakeUIDiv, map);
-        earthQuakeUIDiv.index = 4;
-        map.controls[google.maps.ControlPosition.LEFT_TOP].push(earthQuakeUIDiv); */
+        /***** NEWS CONTENT 1 *****/
+        var newsContentR1UIDiv = document.createElement('div'); //creates new element 
+        var newsContentR1 = new NewsContentR1(newsContentR1UIDiv, map);
+        newsContentR1UIDiv.index = 3;
+        map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsContentR1UIDiv);
 
 
         /*++ CUSTOM UI END ++*/
