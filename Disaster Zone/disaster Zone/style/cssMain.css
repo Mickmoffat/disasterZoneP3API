@@ -1,4 +1,4 @@
-/**** CSS main style sheet disaster zone MDDN201 P3 SPA5 [2015] (300317288)****/
+/**** CSS main style sheet disaster zone MDDN201 P3 [2015] (300317288)****/
 
 /***** INDEX STYLE *****/
 /*[STOP STYLETIME]*/
@@ -129,7 +129,7 @@ body {
     padding:0.2%;
     margin:auto;
 
-   
+    border: 2px dashed green;
 }
 
 /***** BODY END *****/
@@ -144,7 +144,7 @@ header {
     /*COLOR*/
     background-color:#f9f9f9; /*OFF WHITE*/
 
-   
+   border: 2px dashed orange;
 }
 
 /*** HEADER CONTENT ***/
@@ -155,7 +155,7 @@ header {
     height:auto;
     float:left;
     overflow:hidden;
-    /* 
+    /* */
     border:2px solid #00ff34; /*BRIGHT GREEN*/
 }
 
@@ -189,7 +189,7 @@ header {
     background-color:#375D81; /* BLUE DARK */
     overflow:hidden;
     
-    /* 
+    /* */
    
     border:2px solid #b716ee; /*PURPLE*/
     
@@ -204,8 +204,8 @@ header {
     margin:0.5%;
     display:inline-block;
     
-    /*
-    border: 1px solid #C9FFD5; */ 
+    /**/ 
+    border: 1px solid #C9FFD5;
 
 }
 
@@ -226,21 +226,21 @@ height:auto;
     margin:0.5%;
     display:inline-block;
     
-    /* 
-    border: 1px solid #C9FFD5; */
+    /* */
+    border: 1px solid #C9FFD5;
 }
 /* EMAIL */
 .emailAlert {
     
     
-    /* 
-    border: 1px solid green; */
+    /* */
+    border: 1px solid green;
 }
 
 /* SMS */
 .smsAlert {
  
-    /* 
+    /* */
     border:1px dotted black; /* WHITE*/
 }
 
@@ -248,7 +248,7 @@ height:auto;
 
 .radioAlert {
 
-    /*
+    /**/
     border:1px dashed #d8e10e; /*EW YELLO*/
 
 }
@@ -260,8 +260,8 @@ height:auto;
 /* alerts div pop up*/
 .alertsPopUpDiv {
 
-    /*
-    border:2px solid green; */
+    /**/
+    border:2px solid green;
 
 }
 /* ID */
@@ -287,7 +287,7 @@ height:auto;
     background-color:#C4D7ED; /* LIGHT BLUE */
     overflow:hidden;
 
-    /* 
+    /* */
     border:2px solid #b716ee;  /*PURPLE*/
 }
 
@@ -313,7 +313,7 @@ height:auto;
     overflow:hidden;
     background-color:#C4D7ED; /* LIGHT BLUE */
     
-    /* 
+    /* */
     border:2px solid #b716ee; /* PURPLE*/
     
 }
@@ -340,7 +340,7 @@ height:auto;
     background-color:#C4D7ED; /* LIGHT BLUE */
     overflow:hidden;
 
-    /* 
+    /* */
     border:2px solid #b716ee;  /* PURPLE */
     
 }
@@ -360,7 +360,7 @@ height:auto;
     overflow:hidden;
     background-color:#ff530d; /* ORANGE */
     
-    /*
+    /**/
     border:2px solid #b716ee; /*PURPLE*/
     
 }
@@ -443,7 +443,7 @@ input[type=number]{
     display:inline-block;
     overflow:hidden;
 
-    /* 
+    /* */
     border:2px dashed #FFFFCB; /*CREME*/
 }
 
@@ -452,7 +452,7 @@ input[type=number]{
     height:auto;
     position:absolute;
 
-    /* 
+    /* */
     border:2px solid #c916de; /*PURPLE*/
 }
 /* [DISABLED]
@@ -477,8 +477,8 @@ input[type=number]{
     /*COLOR*/
     background-color:#375D81; /* BLUE DARK */
 
-    /* 
-    border: 2px dashed #c916de;*/
+    /* */
+    border: 2px dashed #c916de;
   }
 
 #h1NavHeader {
@@ -499,8 +499,8 @@ input[type=number]{
     border-top-right-radius:0.6em;
     border-bottom-right-radius:0.2em;
     
-    /* 
-    border: 2px dashed #c916de; */
+    /* */
+    border: 2px dashed #c916de;
 }
 
 .navPrep {
@@ -514,8 +514,8 @@ input[type=number]{
     border-top-right-radius:0.6em;
     border-bottom-right-radius:0.2em;
 
-    /* 
-    border: 2px dashed #0026ff; */
+    /* */
+    border: 2px dashed #0026ff;
 }
 
 .navCommunication {
@@ -559,8 +559,8 @@ input[type=number]{
     border-bottom-right-radius:0.2em;
 
     
-    /* 
-    border: 2px dashed #ff0000; */
+    /* */
+    border: 2px dashed #ff0000; 
 }
 
 /**-+ HIDE THE BASTARD [P3]>:) +-**/
@@ -570,8 +570,8 @@ input[type=number]{
     height:15%;
     overflow:hidden;
 
-    /*[NEEDS FIXING]
-    border: 2px solid #ff00dc; */
+    /*[NEEDS FIXING]*/
+    border: 2px solid #ff00dc;
 }
 
 /***+++++ NAV EXPAND +++++***/
@@ -601,15 +601,11 @@ input[type=number]{
     /*R*/
     border-bottom-right-radius:0.6em;
     border-top-right-radius:0.2em;
-    /*position:absolute;
-     z-index:1;*/
-    
-    
     
    background-color:#C4D7ED; /* LIGHT BLUE */
 
-    /* 
-    border: 2px dashed #c916de;*/
+    /* */
+    border: 2px dashed #c916de;
 }
 
 /** NEWS EXPAND CONTENT [ADD HIDDEN ELEMENT IN JQ EXPAND ON CLICK [P3]]**/
@@ -709,8 +705,8 @@ input[type=number]{
 
     background-color:#C4D7ED; /* LIGHT BLUE */
     
-    /* 
-    border: 2px dashed #0026ff; */
+    /* */
+    border: 2px dashed #0026ff;
 }
 
 /** PREP EXPAND CONTENT **/
@@ -718,7 +714,7 @@ input[type=number]{
    height:auto;
    margin-bottom:0.5%;
 
-   /* 
+   /* */
    border:1px solid #ff0000;  /* RED */
 
 }
@@ -745,8 +741,8 @@ input[type=number]{
     
    background-color:#C4D7ED; /* LIGHT BLUE */
     
-    /* 
-    border: 2px dashed #ff00dc;*/
+    /* */
+    border: 2px dashed #ff00dc;
 }
 
 #navHExpand {
@@ -769,8 +765,8 @@ input[type=number]{
 
     background-color:#C4D7ED; /* LIGHT BLUE */
     
-    /* 
-    border: 2px dashed #ff0000; */
+    /* */
+    border: 2px dashed #ff0000;
 }
 
 /*++ CLASS END ++*/
@@ -779,6 +775,10 @@ input[type=number]{
 
 /**+++ NAV HIDE ON LOAD +++**/
 .hidden {
+    display:none;
+}
+/**HIDE NEWS ON LOAD*/
+#hidden {
     display:none;
 }
 
@@ -808,8 +808,8 @@ article {
     /* colors */
     background-color:#f9f9f9; /*OFF WHITE*/
 
-    /* 
-    border: 2px dashed red;*/
+    /* */
+    border: 2px dashed red;
     
 
     
@@ -869,20 +869,20 @@ table {
     padding:0.2%;
     width:100%;
 
-    /* 
+    /* */
     border:1px solid #0026ff;  /* BLUE*/
 }
 
 tr {
 
-   /* 
-   border: 1px solid green; */
+   /* */
+   border: 1px solid green;
 }
 
 td {
     
    
-    /* border: 1px solid #4cff00; BRIGHT GREEN */
+    border: 1px solid #4cff00; /* BRIGHT GREEN */
 }
 
 /* IMG KEY */
@@ -930,7 +930,7 @@ td {
 
     background-color:#C4D7ED; /*LIGHT BLUE*/
     
-    /*
+    /* */
     border:1px dotted #ff0000; /* RED */
 }
 
@@ -958,8 +958,8 @@ td {
     height: 83.2vh; /* % DOES NOT WORK*/
     overflow:hidden;
 
-    /* 
-    border: 1px solid orange;*/
+    /* */
+    border: 1px solid orange;
 }
 
 /*** ID END ***/
@@ -971,8 +971,8 @@ td {
     height:100%;
     
     
-    /* 
-    border:2px dashed black;*/
+    /* */
+    border:2px dashed black;
 
 }
 
@@ -1000,7 +1000,7 @@ td {
 /* overflow:hidden;*/
 padding:0.2%;
 
-/*
+/**/
 border:2px solid #7000ff; /* PURPLE*/
 }
 
@@ -1031,8 +1031,8 @@ footer {
     background-color:#183152; /*DARK BLUE */
 
     
-    /*
-   border: 2px dashed blue; */
+    /**/
+   border: 2px dashed blue;
 }
 
 footer p {
@@ -1049,7 +1049,7 @@ footer p {
 
 
     
-    /*
+    /**/
    border:5px solid #fffa00; /*YELLOW*/
 }
 
