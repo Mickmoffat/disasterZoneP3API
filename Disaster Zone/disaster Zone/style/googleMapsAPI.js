@@ -92,6 +92,7 @@ function NewsControl(newsUIDiv, map) {
     newsUI.style.textAlign = 'left'; //sets text alignment
     newsUI.style.width = '23.5vw'; //sets width [NEEDS FIXING]
     newsUI.style.height = '83.2vh'; //does not accept %
+    newsUI
     //MARGIN
     newsUI.style.marginRight = '2%';
     newsUI.style.marginBottom = '2%'; //sets margin
@@ -100,27 +101,23 @@ function NewsControl(newsUIDiv, map) {
 
     /*++ CONTENT ROW 1 NZ ++*/
     var newsContentR1UI = document.createElement('div'); //creates div element
-    newsContentR1UI.style.height = '200px'; //height
-    newsContentR1UI.style.width = '23.5vw'; //width
-    newsContentR1UI.style.overflow = 'hidden'; //overflow
-    newsContentR1UI.style.background = '#ff0808'; //background
+    newsContentR1UI.style.height = 'auto'; //height
     newsContentR1UI.innerHTML = '<div class="NSCR1">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'; //sets text
-
+    
     newsUI.appendChild(newsContentR1UI); //must equal name set in above, eg newsUI
 
-    /*++ CONTENT ROW 2 AU ++*/
+    /*++ CONTENT ROW 2 AU []++*/
     var newsContentR2UI = document.createElement('div'); //creates div element
-    newsContentR2UI.style.height = '200px'; //height
-    newsContentR2UI.style.width = '23.5vw'; //width
-    newsContentR2UI.style.overflow = 'hidden'; //overflow
-    newsContentR2UI.style.background = '#ff0808'; //background
-    newsContentR2UI.style.innerHTML = '<div class="NSCR2">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>'; //sets line height
+    newsContentR2UI.style.height = 'auto'; //height
+    newsContentR2UI.innerHTML = '<div class="NSCR2">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>'; //sets line height
 
     newsUI.appendChild(newsContentR2UI);
 
 
 
+
 }
+/* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4*/
 /* MAIN NEWS UI END [FUNCTION]*/
 
 /* CONTENT ROW 1 NZ [FUNCTION]  
@@ -145,7 +142,7 @@ function NewsContentR2(newsContentR2UIDiv, map) {
 
 }
 /* CONTENT ROW 2 AUS END [FUNCTION] */
-
+/* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4 [END] */
 
 /*** INITAL MAP ***/
 
@@ -241,6 +238,7 @@ function initMap() {
         map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsUIDiv);
         /* NEWS MAIN END */
 
+        /* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4 [START] */
         /***** NEWS CONTENT 1 NZ [START] ****
         var newsContentR1UIDiv = document.createElement('div'); //creates new element 
         var newsContentR1 = new NewsContentR1(newsContentR1UIDiv, map);
@@ -254,6 +252,8 @@ function initMap() {
         newsContentR2UIDiv.index = 3; //z-index must be less than news main
         map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsContentR2UIDiv);
         /***** NEWS CONTENT 2 AU [END] *****/
+
+        /* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4 [END] */
 
         /*++ CUSTOM UI END ++*/
 
