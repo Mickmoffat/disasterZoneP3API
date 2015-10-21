@@ -63,6 +63,15 @@ h4 {
     padding:0.2%;
 
 }
+/* FOR UI KEY HEADER */
+h7 {
+    font-family:'Lato';
+    color:#f9f9f9; /* DARK BLUE*/
+    font-size:1.4vw;
+    margin:0.2%;
+    padding:0.2%;
+
+}
 
 #navHExpand h4 {
     color:#183152; /*DARK BLUE*/
@@ -894,7 +903,7 @@ td {
 /* IMAGE ID FOR COLORS SIZING [NEEDS TO BE MADE RESPONCIVE P3]*/
 #imgColorSize {
     height:40px;
-    height:2.500em;
+    height:2vw;
 }
 
 /* IMAGE CLASS FOR DISASTERS */
@@ -905,9 +914,8 @@ td {
 
 /* DISASTER EVENT IMG SIZE */
 #imgDisasterEvent {
-    height:40px;
     height:auto;
-    width:2.600em;
+    width:2.5vw;
 }
 
 
