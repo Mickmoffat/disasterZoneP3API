@@ -92,7 +92,8 @@ function NewsControl(newsUIDiv, map) {
     newsUI.style.textAlign = 'left'; //sets text alignment
     newsUI.style.width = '23.5vw'; //sets width [NEEDS FIXING]
     newsUI.style.height = '83.2vh'; //does not accept %
-    newsUI
+    newsUI.style.overflow = 'scroll';
+    
     //MARGIN
     newsUI.style.marginRight = '2%';
     newsUI.style.marginBottom = '2%'; //sets margin
@@ -113,38 +114,32 @@ function NewsControl(newsUIDiv, map) {
 
     newsUI.appendChild(newsContentR2UI);
 
+    /*+++ CONTENT ROW 3 THAI +++*/
+    var newsContentR3UI = document.createElement('div'); //creates div element
+    newsContentR3UI.style.height = 'auto'; //height
+    newsContentR3UI.innerHTML = ' <div class="NSCR3">' + '<h2>Flood Northern Thailand [Strong]</h2>' + '<p>Torrential downpours over the last three days in the northern province of Chiang Rai caused widespread flooding. State officials report the Mekong and Sai Rivers have overflowed and are flooding Chiang Rai. Farm lands and houses have been most affected by this ongoing event. Local authorities have declared this flooding a natural disaster and relief from the government is on its way to support and help with clean up. More than 1,000 homes have been affected by the flooding, and local farm lands. Thai Meteorological Department say that, over the next 24 hours rain should start to ease up there is a low risk of flash flooding in some areas. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>';
+
+    newsUI.appendChild(newsContentR3UI); //most important line, makes child of main div
+
+    /*+++ CONTENT ROW 4 USA +++*/
+    var newsContentR4UI = document.createElement('div'); //creates div element
+    newsContentR4UI.style.height = 'auto'; //height
+    newsContentR4UI.innerHTML = ' <div class="NSCR4">' + '<h2>Tornado Warning Illinois USA [Moderate]</h2>' + '<p> The threat for a Tornado is high in the Illinois county region, residents have are advised to prepare for a  Tornado that could build over the next few days. Due to temperate weather conditions, make sure to have your house and family ready in the event this storm creates a Tornado. Keep tabs on local weather stations, and regional radio broadcasts for up to date information. If you are in the Illinois region and spot a developing Tornado, please advise us at <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a> Be careful out there and take all necessary precautions, if you don&#39;t have to travel somewhere over the next few days, we are advising you don&#39;t stay at home and get ready for what might eventuate.</p>' + '</div>';
+
+    newsUI.appendChild(newsContentR4UI); //most important line, makes child of main div
+
+    /*+++ CONTENT ROW 5 BRAZIL +++*/
+    var newsContentR5UI = document.createElement('div'); //creates div element
+    newsContentR5UI.style.height = 'auto'; //height
+    newsContentR5UI.innerHTML = ' <div class="NSCR5">' + '<h2>Hurricane Brazil [Moderate]</h2>' + '<p>The threat for a Hurricane building off the Atlantic coast is moderate, due to wild weather conditions. Citizens of Brazil are advised to take extra care, this storm may pass without building to a full blown Hurricane but expect high winds and hail. Over the next 48 hours be ready to batten down the hatches should this tropical storm brew into a Hurricane. Be advised to keep up to date with the latest information, here on disaster zone and local news and weather broadcasts. Send any updates to us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a>.</p>' + '</div>';
+
+    newsUI.appendChild(newsContentR5UI); //most important line, makes child of main div
 
 
 
 }
-/* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4*/
-/* MAIN NEWS UI END [FUNCTION]*/
 
-/* CONTENT ROW 1 NZ [FUNCTION]  
-function NewsContentR1(newsContentR1UIDiv, map) {
-    var newsContentR1UI = document.createElement('div');
-    newsContentR1UI.style.height = '200px';
-    newsContentR1UI.style.width = '23.5vw';
-    newsContentR1UI.style.overflow = 'hidden';
-    newsContentR1UI.style.background = '#ff0808';
-    newsContentR1UI.innerHTML = '<div class="NSCR1">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'
-    newsContentR1UIDiv.appendChild(newsContentR1UI); 
-} 
-/* CONTENT ROW 1 NZ END [FUNCTION]*/
-
-/* CONTENT ROW 2 AUS [FUNCTION] 
-function NewsContentR2(newsContentR2UIDiv, map) {
-    var newsContentR2UI = document.createElement('div');
-    newsContentR2UI.style.height = 'auto';
-    newsContentR2UI.style.width = '23.5vw';
-    newsContentR2UI.innerHTML = '<div class="NSCR2">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>';
-    newsContentR2UIDiv.appendChild(newsContentR2UI);
-
-}
-/* CONTENT ROW 2 AUS END [FUNCTION] */
-/* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4 [END] */
-
-/*** INITAL MAP ***/
+/*** START MAP ***/
 
 function initMap() {
     /******* ARRAY POS METHOD *******/
@@ -237,23 +232,6 @@ function initMap() {
         newsUIDiv.index = 4;
         map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsUIDiv);
         /* NEWS MAIN END */
-
-        /* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4 [START] */
-        /***** NEWS CONTENT 1 NZ [START] ****
-        var newsContentR1UIDiv = document.createElement('div'); //creates new element 
-        var newsContentR1 = new NewsContentR1(newsContentR1UIDiv, map);
-        newsContentR1UIDiv.index = 3; //z-index must be less than news main
-        map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsContentR1UIDiv);
-        /***** NEWS CONTENT 1 NZ [END] *****/
-
-        /***** NEWS CONTENT 2 AU [START] ****
-        var newsContentR2UIDiv = document.createElement('div'); //creates new element 
-        var newsContentR2 = new NewsContentR2(newsContentR2UIDiv, map);
-        newsContentR2UIDiv.index = 3; //z-index must be less than news main
-        map.controls[google.maps.ControlPosition.LEFT_TOP].push(newsContentR2UIDiv);
-        /***** NEWS CONTENT 2 AU [END] *****/
-
-        /* METHOD FOR DISPLAYING WORKS BUT CANT SCROLL 13.4 [END] */
 
         /*++ CUSTOM UI END ++*/
 
