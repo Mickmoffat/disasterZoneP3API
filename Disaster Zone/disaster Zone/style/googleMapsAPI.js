@@ -64,22 +64,7 @@ function CenterControl(controlDiv, map) {
     /* KEY UI END */
 
 }
-/* MAIN NEWS UI [FUNCTION]
-function NewsControl(newsUIDiv, map) {
-    
-    var newsUI = document.createElement('div');
-    newsUI.style.backgroundColor = '#C4D7ED';//sets background color
-    newsUI.style.padding = '2%';
-    newsUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
-    newsUI.style.cursor = 'pointer'; //sets custom pointers
-    newsUI.style.textAlign = 'left'; //sets text alignment
-    newsUI.style.width = '23.5vw'; //sets width [NEEDS FIXING]
-    newsUI.style.height = '83.2vh'; //does not accept %
-    //MARGIN
-    newsUI.style.marginRight = '2%';
-    newsUI.style.marginBottom = '2%'; //sets margin
-    newsUIDiv.appendChild(newsUI); //must equal name set in function eg newsUIDiv
-} */
+
 
 function NewsControl(newsUIDiv, map) {
 
@@ -103,35 +88,35 @@ function NewsControl(newsUIDiv, map) {
     /*++ CONTENT ROW 1 NZ ++*/
     var newsContentR1UI = document.createElement('div'); //creates div element
     newsContentR1UI.style.height = 'auto'; //height
-    newsContentR1UI.innerHTML = '<div class="NSCR1">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'; //sets text
+    newsContentR1UI.innerHTML = '<div class="NSCR1" id ="hidden">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'; //sets text
     
     newsUI.appendChild(newsContentR1UI); //must equal name set in above, eg newsUI
 
     /*++ CONTENT ROW 2 AU []++*/
     var newsContentR2UI = document.createElement('div'); //creates div element
     newsContentR2UI.style.height = 'auto'; //height
-    newsContentR2UI.innerHTML = '<div class="NSCR2">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>'; //sets line height
+    newsContentR2UI.innerHTML = '<div class="NSCR2" id ="hidden">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>'; //sets line height
 
     newsUI.appendChild(newsContentR2UI);
 
     /*+++ CONTENT ROW 3 THAI +++*/
     var newsContentR3UI = document.createElement('div'); //creates div element
     newsContentR3UI.style.height = 'auto'; //height
-    newsContentR3UI.innerHTML = ' <div class="NSCR3">' + '<h2>Flood Northern Thailand [Strong]</h2>' + '<p>Torrential downpours over the last three days in the northern province of Chiang Rai caused widespread flooding. State officials report the Mekong and Sai Rivers have overflowed and are flooding Chiang Rai. Farm lands and houses have been most affected by this ongoing event. Local authorities have declared this flooding a natural disaster and relief from the government is on its way to support and help with clean up. More than 1,000 homes have been affected by the flooding, and local farm lands. Thai Meteorological Department say that, over the next 24 hours rain should start to ease up there is a low risk of flash flooding in some areas. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>';
+    newsContentR3UI.innerHTML = ' <div class="NSCR3" id ="hidden">' + '<h2>Flood Northern Thailand [Strong]</h2>' + '<p>Torrential downpours over the last three days in the northern province of Chiang Rai caused widespread flooding. State officials report the Mekong and Sai Rivers have overflowed and are flooding Chiang Rai. Farm lands and houses have been most affected by this ongoing event. Local authorities have declared this flooding a natural disaster and relief from the government is on its way to support and help with clean up. More than 1,000 homes have been affected by the flooding, and local farm lands. Thai Meteorological Department say that, over the next 24 hours rain should start to ease up there is a low risk of flash flooding in some areas. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>';
 
     newsUI.appendChild(newsContentR3UI); //most important line, makes child of main div
 
     /*+++ CONTENT ROW 4 USA +++*/
     var newsContentR4UI = document.createElement('div'); //creates div element
     newsContentR4UI.style.height = 'auto'; //height
-    newsContentR4UI.innerHTML = ' <div class="NSCR4">' + '<h2>Tornado Warning Illinois USA [Moderate]</h2>' + '<p> The threat for a Tornado is high in the Illinois county region, residents have are advised to prepare for a  Tornado that could build over the next few days. Due to temperate weather conditions, make sure to have your house and family ready in the event this storm creates a Tornado. Keep tabs on local weather stations, and regional radio broadcasts for up to date information. If you are in the Illinois region and spot a developing Tornado, please advise us at <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a> Be careful out there and take all necessary precautions, if you don&#39;t have to travel somewhere over the next few days, we are advising you don&#39;t stay at home and get ready for what might eventuate.</p>' + '</div>';
+    newsContentR4UI.innerHTML = ' <div class="NSCR4" id ="hidden">' + '<h2>Tornado Warning Illinois USA [Moderate]</h2>' + '<p> The threat for a Tornado is high in the Illinois county region, residents have are advised to prepare for a  Tornado that could build over the next few days. Due to temperate weather conditions, make sure to have your house and family ready in the event this storm creates a Tornado. Keep tabs on local weather stations, and regional radio broadcasts for up to date information. If you are in the Illinois region and spot a developing Tornado, please advise us at <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a> Be careful out there and take all necessary precautions, if you don&#39;t have to travel somewhere over the next few days, we are advising you don&#39;t stay at home and get ready for what might eventuate.</p>' + '</div>';
 
     newsUI.appendChild(newsContentR4UI); //most important line, makes child of main div
 
     /*+++ CONTENT ROW 5 BRAZIL +++*/
     var newsContentR5UI = document.createElement('div'); //creates div element
     newsContentR5UI.style.height = 'auto'; //height
-    newsContentR5UI.innerHTML = ' <div class="NSCR5">' + '<h2>Hurricane Brazil [Moderate]</h2>' + '<p>The threat for a Hurricane building off the Atlantic coast is moderate, due to wild weather conditions. Citizens of Brazil are advised to take extra care, this storm may pass without building to a full blown Hurricane but expect high winds and hail. Over the next 48 hours be ready to batten down the hatches should this tropical storm brew into a Hurricane. Be advised to keep up to date with the latest information, here on disaster zone and local news and weather broadcasts. Send any updates to us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a>.</p>' + '</div>';
+    newsContentR5UI.innerHTML = ' <div class="NSCR5" id ="hidden">' + '<h2>Hurricane Brazil [Moderate]</h2>' + '<p>The threat for a Hurricane building off the Atlantic coast is moderate, due to wild weather conditions. Citizens of Brazil are advised to take extra care, this storm may pass without building to a full blown Hurricane but expect high winds and hail. Over the next 48 hours be ready to batten down the hatches should this tropical storm brew into a Hurricane. Be advised to keep up to date with the latest information, here on disaster zone and local news and weather broadcasts. Send any updates to us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a>.</p>' + '</div>';
 
     newsUI.appendChild(newsContentR5UI); //most important line, makes child of main div
 
@@ -183,7 +168,7 @@ function initMap() {
 
     ];
 
-    /**_IMAGE ICON ARRAY _**/ //NOT WORKING NEEDS FIXING
+    /**_IMAGE ICON ARRAY _**/
     var iconArray = [
         './media/img/mapKeys/event/light/earthquakeL.png',  //[0] TAUMARUNI EARTH QUAKE NZ
         './media/img/mapKeys/event/severe/fireS.png',      //[1] PERTH BUSH FIRE AUS
@@ -191,6 +176,16 @@ function initMap() {
         './media/img/mapKeys/event/moderate/tornadoM.png', //[3] ILLINOIS TORNADO USA
         './media/img/mapKeys/event/weak/hurricaneW.png'    //[4]  HURRICANE BRAZIL
     ];
+
+    /**__ NEWS SHOW HIDE ARRAY __**/
+    var newsShowArray = [
+        0, //[0] = NZ
+        1, //[1] = AUS
+        2, //[2] = THAI
+        3, //[3] = USA
+        4, //[4] = BRAZIL
+         
+    ]
 
     window.onload = function () {
         var mapOptions = {
@@ -242,6 +237,7 @@ var interval = setInterval(function () {
             var data = mapMarkers[i] //markers data from markers array
             var myLatlng = mapPositions[i]; //loads positions from Map position array
             var icon = iconArray[i]; //loads icon from array
+            var newsShow = newsShowArray[i]; //news show or hide array
 
             var marker = new google.maps.Marker({
                 position: myLatlng,
@@ -252,8 +248,28 @@ var interval = setInterval(function () {
             });
 
     /** SETS MARKER DESCRIPTION DESPLAY ON CLICK **/
-    /* PLACE UI SCRYPT HERE TO CREATE NEW ELEMENTS FOR EACH MARKER*/
+    /* REMOVES HIDDEN ID FROM NEWS UI*/
+    //use if else and array to show and hide elements
 
+            if (newsShow === 0) {
+                $(".NSCR1").removeAttr("id");
+            }
+            
+            if (newsShow === 1) {
+                $(".NSCR2").removeAttr("id");
+            }
+
+            if (newsShow === 2) {
+                $(".NSCR3").removeAttr("id");
+            }
+
+            if (newsShow === 3) {
+                $(".NSCR4").removeAttr("id");
+            }
+
+            if (newsShow === 4) {
+                $(".NSCR5").removeAttr("id");
+            }
             (function (marker, data) {
 
                 //on click make maker set to description
