@@ -185,7 +185,7 @@ function initMap() {
 
     /** SETS MAIN NEWS UI TO AUTO SCROLL DOWN ON UPDATED NEWS **/
     //use focus on element
-    //$("div1").animate({ scrollTop: $("div1")[0].scrollHeight }, 1000);
+    //$("div").animate({ scrollDown: $("div")[0].scrollHeight }, 1000);
 
     /** AFTER WINDOW LOADS FUNCTION **/
 
@@ -247,7 +247,7 @@ var interval = setInterval(function () {
                 title: data.title,
                 icon: icon,
                 animation: google.maps.Animation.DROP
-            });
+    });
 
     /** SETS MARKER DESCRIPTION DESPLAY ON CLICK **/
     /* REMOVES HIDDEN ID FROM NEWS UI*/
@@ -255,33 +255,29 @@ var interval = setInterval(function () {
             
            if (newsShow === 0) {
                $(".NSCR1").removeAttr("id");
-               var center = new google.maps.LatLng(-38.8833, 175.2617);
-               map.panTo(center);
             }
             
             if (newsShow === 1) {
                 $(".NSCR2").removeAttr("id");
-                var center = new google.maps.LatLng(-31.9522, 115.8589);
-                map.panTo(center);
             }
 
             if (newsShow === 2) {
                 $(".NSCR3").removeAttr("id");
-                var center = new google.maps.LatLng(19.9094, 99.8275);
-                map.panTo(center);
+                
             }
 
             if (newsShow === 3) {
                 $(".NSCR4").removeAttr("id");
-                var center = new google.maps.LatLng(40.0000, -89.0000);
-                map.panTo(center);
-            }
+                
+             }
 
             if (newsShow === 4) {
                 $(".NSCR5").removeAttr("id");
-                var center = new google.maps.LatLng(-15.4700, -47.5500);
-                map.panTo(center);
             }
+
+    /*++ PAN TO FUNCTION ++*/
+            var center = myLatlng;
+            map.panTo(center);
 
             
             (function (marker, data) {
