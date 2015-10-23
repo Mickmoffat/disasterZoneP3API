@@ -1,16 +1,7 @@
 /* custom javaScrypt MDDN201 P3 [2015] (300317288)*/
 
 $(document).ready(function () {
-    /***** TINY SCROLL [Seems to break everything] **** 
-    var $box = $("#box");
-    $box.tinyscrollbar();
-
-    var box = $box.data();
-
-    $box.bind("move", function () {
-
-    }); */
-
+   
     /****^ ALERTS SHOW ^****/
 /* CLICK VAR */
     var clickSMS = 0; //SMS
@@ -240,47 +231,7 @@ $(document).ready(function () {
         
     });
 
-    /**++++ NEWS ITEM CLICK JUMP TO API ++++**/
-   /* $(".navCommunication").click(function () {
-        //show nav expand div
-        $("#navComExpand").removeClass("hidden");
-        $("#navComExpand").animate({ height: "auto" }); //sets hight and animates
-        clickCY = false; //sets click yes to false
-        clickC = clickC + 1; //adds 1 to var
-
-        //hide nav expand div
-        if (clickC == 2) {
-            $("#navComExpand").addClass("hidden");
-            $("#navComExpand").animate({ height: "auto" }); //sets hight to 0%
-            clickCY = true; //sets click yes to true
-            clickC = 0; //sets var to 0
-        }
-
-    }); 
-    google.maps.event.addListener(marker, 'click', function() {
-  window.location = "#anchor";
-});
-    */
-
-
-    /*++++ _TAUMARUNI [NZ] ++++
-    $(".NSCR1").click(function () {
-        //google.maps.event.addListener(marker, 'click', function () {
-           // this.infowindow.open(map, this);
-
-        });
-    }); */
     
-    /*+++ PERTH [AUS] +++*/
-
-    /*++ CHIANG RAI [Thailand]++*/
-
-    /*+ ILLIONIS [USA] +*/
-
-    /* BRAZIL [BRAZIL]*/
-
-
-        
 
 
       

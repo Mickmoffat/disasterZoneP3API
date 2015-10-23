@@ -137,8 +137,6 @@ body {
     overflow:visible;
     padding:0.2%;
     margin:auto;
-
-    border: 2px dashed green;
 }
 
 /***** BODY END *****/
@@ -152,8 +150,6 @@ header {
     
     /*COLOR*/
     background-color:#f9f9f9; /*OFF WHITE*/
-
-   border: 2px dashed orange;
 }
 
 /*** HEADER CONTENT ***/
@@ -165,7 +161,6 @@ header {
     float:left;
     overflow:hidden;
     /* */
-    border:2px solid #00ff34; /*BRIGHT GREEN*/
 }
 
 #headerLogoScale {
@@ -199,10 +194,6 @@ header {
     overflow:hidden;
     
     /* */
-   
-    border:2px solid #b716ee; /*PURPLE*/
-    
-    
 }
 
 
@@ -214,8 +205,6 @@ header {
     display:inline-block;
     
     /**/ 
-    border: 1px solid #C9FFD5;
-
 }
 
 #alertText {
@@ -236,30 +225,21 @@ height:auto;
     display:inline-block;
     
     /* */
-    border: 1px solid #C9FFD5;
 }
 /* EMAIL */
 .emailAlert {
-    
-    
     /* */
-    border: 1px solid green;
 }
 
 /* SMS */
 .smsAlert {
- 
-    /* */
-    border:1px dotted black; /* WHITE*/
+ /* */
 }
 
 /* RADIO */
 
 .radioAlert {
-
-    /**/
-    border:1px dashed #d8e10e; /*EW YELLO*/
-
+/**/
 }
 
  /*-- NOT WORKING --*/
@@ -270,15 +250,12 @@ height:auto;
 .alertsPopUpDiv {
 
     /**/
-    border:2px solid green;
-
 }
 /* ID */
 #smsAlertShow {
     width:23.84%;
     height:auto;
     margin-left:75%;
-    /*margin-left:74vw;*/
     margin-top:6%;
     padding:0.5%;
     position:absolute;
@@ -297,14 +274,12 @@ height:auto;
     overflow:hidden;
 
     /* */
-    border:2px solid #b716ee;  /*PURPLE*/
-}
+ }
 
 #emailAlertShow {
     width:23.84%;
     height:auto;
     margin-left:75%;
-    /*margin-left:74vw;*/
     margin-top:6%;
   
     padding:0.5%;
@@ -321,17 +296,13 @@ height:auto;
 
     overflow:hidden;
     background-color:#C4D7ED; /* LIGHT BLUE */
-    
     /* */
-    border:2px solid #b716ee; /* PURPLE*/
-    
 }
 
 #radioAlertShow {
     width:23.84%;
     height:auto;
     margin-left:75%;
-    /*margin-left:74vw;*/
     margin-top:6%;
   
     padding:0.5%;
@@ -350,8 +321,6 @@ height:auto;
     overflow:hidden;
 
     /* */
-    border:2px solid #b716ee;  /* PURPLE */
-    
 }
 
 
@@ -370,8 +339,6 @@ height:auto;
     background-color:#ff530d; /* ORANGE */
     
     /**/
-    border:2px solid #b716ee; /*PURPLE*/
-    
 }
 
 /* CLASS */
@@ -380,9 +347,7 @@ height:auto;
 
 /**++ FORM ++**/
 form {
-    
     display:inline-block;
-
 }
 /* FORM TEXT SYTLE */
 input[type=text]{
@@ -391,34 +356,18 @@ input[type=text]{
     margin-right:5%;
     margin:0.3%;
     height:1.3vw;
-      
 }
-
-/* FORM RADIO STYLE [FIX LATER
-input[name=agree] {
-    font-family:'Lato';
-    font-size:1.1vw;
-    ]*/
 
 input[type=submit]{
 font-family:'Lato';
     font-size:1.1vw;
-
 }
     
-
-/* NUMBER FORM [DISABLED P3]
-input[type=number]{
-    width:25%;
-    -webkit-appearance: none; 
-}
-*/
 /*+ PLACEHOLDER TEXT STYLE +*/
 ::-webkit-input-placeholder {
    font-family:'Lato';
    font-size:1.1vw;
    color: grey;
-     
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -448,29 +397,18 @@ input[type=number]{
     
 }
 #inputDiv {
-    
     display:inline-block;
     overflow:hidden;
-
     /* */
-    border:2px dashed #FFFFCB; /*CREME*/
 }
 
 .inputDivRow2 {
     width:auto;
     height:auto;
     position:absolute;
-
     /* */
-    border:2px solid #c916de; /*PURPLE*/
 }
-/* [DISABLED]
-.inputDivRow2:first-child input[type=text] {
-    
-        margin-left:25px;
-        margin-left:2vw;
-    }
-*/
+
 /*** HEADER CONTENT END ***/
 /**** NAV BAR ****/
 
@@ -482,13 +420,10 @@ input[type=number]{
     height:85%;
     margin:0.5%;
     display:inline-block;
-
     /*COLOR*/
     background-color:#375D81; /* BLUE DARK */
-
     /* */
-    border: 2px dashed #c916de;
-  }
+}
 
 #h1NavHeader {
     text-align:center;
@@ -509,7 +444,6 @@ input[type=number]{
     border-bottom-right-radius:0.2em;
     
     /* */
-    border: 2px dashed #c916de;
 }
 
 .navPrep {
@@ -524,7 +458,6 @@ input[type=number]{
     border-bottom-right-radius:0.2em;
 
     /* */
-    border: 2px dashed #0026ff;
 }
 
 .navCommunication {
@@ -537,22 +470,6 @@ input[type=number]{
     border-top-right-radius:20px;
     border-top-right-radius:0.6em;
     border-bottom-right-radius:0.2em;
-    
-    
-
-    /*[NEEDS FIXING]*/
-    /* WORKS BUT NOT FULLSCREEN
-    position:absolute;
-    height:11.5%;
-    height:7vw;
-    max-height:;
-    display:inline-block;
-    
-    margin-top:-125px;
-    margin-top:-6.5%;
-    margin-left:75.1%; 
-
-    border: 2px dashed #ff00dc;*/ 
 }
 
 .navHelpOut {
@@ -566,10 +483,7 @@ input[type=number]{
     border-top-right-radius:20px;
     border-top-right-radius:0.6em;
     border-bottom-right-radius:0.2em;
-
-    
     /* */
-    border: 2px dashed #ff0000; 
 }
 
 /**-+ HIDE THE BASTARD [P3]>:) +-**/
@@ -578,9 +492,6 @@ input[type=number]{
     width:100%;
     height:15%;
     overflow:hidden;
-
-    /*[NEEDS FIXING]*/
-    border: 2px solid #ff00dc;
 }
 
 /***+++++ NAV EXPAND +++++***/
@@ -592,7 +503,6 @@ input[type=number]{
 
 #navNExpand {
     width:23.84%;
-    /*height:90%;*/
     /* SETTING CHANGED BY JS*/
     height:84vh;
     margin-top:0.2%;
@@ -614,7 +524,6 @@ input[type=number]{
    background-color:#C4D7ED; /* LIGHT BLUE */
 
     /* */
-    border: 2px dashed #c916de;
 }
 
 /** NEWS EXPAND CONTENT [ADD HIDDEN ELEMENT IN JQ EXPAND ON CLICK [P3]]**/
@@ -622,10 +531,6 @@ input[type=number]{
     height:auto;
     margin-bottom:0.5%;
     overflow:hidden;
-
-    /* COLOR 
-    background-color:#ffffff;*/
-
     /**/
     border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
@@ -633,10 +538,6 @@ input[type=number]{
 .NSCR2 {
    height:auto;
    margin-bottom:0.5%;
-
-    /* COLOR 
-    background-color:#ffffff; */
-
    /**/
   border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
@@ -644,64 +545,45 @@ input[type=number]{
 .NSCR3 {
    height:auto;
    margin-bottom:0.5%;
-
-    /* COLOR 
-    background-color:#ffffff; */
-   
-      /**/
+   /**/
    border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
 
 .NSCR4 {
    height:auto;
    margin-bottom:0.5%;
-
-    /* COLOR 
-    background-color:#ffffff; */
-
-      /**/
+  /**/
   border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
 
 .NSCR5 {
    height:auto;
    margin-bottom:0.5%;
-
-    /* COLOR
-    background-color:#ffffff;  */
-    
-     /**/
+   /**/
   border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
 
 .NSCR6 {
    height:auto;
    margin-bottom:0.5%;
-
-    /* COLOR 
-    background-color:#ffffff; */
-   
-      /**/
+  /**/
     border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
 /**+ HIDDEN ELEMENT CLASS +**/
 #hiddenElement {
     height:10%;
     overflow:hidden;
-
 }
 
 /** NEWS EXPAND CONTENT END **/
 
 #navPExpand {
     width:23.84%;
-    /*height:90%;*/
     /* SETTING CHANGED BY JS*/
     margin-top:0.2%;
     margin-left:25.24%;
     padding:0.2%;
     position:absolute;
-    
     z-index:4;
 
    /*BORDER*/
@@ -713,9 +595,7 @@ input[type=number]{
     border-top-right-radius:0.2em;
 
     background-color:#C4D7ED; /* LIGHT BLUE */
-    
     /* */
-    border: 2px dashed #0026ff;
 }
 
 /** PREP EXPAND CONTENT **/
@@ -724,8 +604,6 @@ input[type=number]{
    margin-bottom:0.5%;
 
    /* */
-   border:1px solid #ff0000;  /* RED */
-
 }
 
 /** PREP EXPAND CONTENT END **/
@@ -751,7 +629,6 @@ input[type=number]{
    background-color:#C4D7ED; /* LIGHT BLUE */
     
     /* */
-    border: 2px dashed #ff00dc;
 }
 
 #navHExpand {
@@ -775,7 +652,6 @@ input[type=number]{
     background-color:#C4D7ED; /* LIGHT BLUE */
     
     /* */
-    border: 2px dashed #ff0000;
 }
 
 /*++ CLASS END ++*/
@@ -818,10 +694,6 @@ article {
     background-color:#f9f9f9; /*OFF WHITE*/
 
     /* */
-    border: 2px dashed red;
-    
-
-    
 }
 
 /*****++= MAP OVERLAY =++*****/
@@ -830,7 +702,6 @@ article {
     color:#f9f9f9; /* off white*/
     font-size:1.2vw;
     padding-bottom:0.5%;
-
 }
 
 /***+ EVENT OVERLAY +***/
@@ -843,7 +714,6 @@ article {
     margin-left:60%;
     
     /* */
-   /* border:1px dotted #000000;  BLACK */
 }
 
 .flood {
@@ -879,20 +749,17 @@ table {
     width:100%;
 
     /* */
-    border:1px solid #0026ff;  /* BLUE*/
 }
 
 tr {
 
    /* */
-   border: 1px solid green;
+   
 }
 
 td {
     
-   
-    border: 1px solid #4cff00; /* BRIGHT GREEN */
-}
+ }
 
 /* IMG KEY */
 .imgKeyColor {
@@ -939,7 +806,6 @@ td {
     background-color:#C4D7ED; /*LIGHT BLUE*/
     
     /* */
-    border:1px dotted #ff0000; /* RED */
 }
 
 /**** MAP KEY END ****/
@@ -954,20 +820,14 @@ td {
 #mainContainerApi {
     width:auto;
     height:100%;
-    /*overflow:hidden;*/ 
-
-    /* */
-    border:2px dashed #23a0c2; /* LIGHT BLUE */
-
+   /* */
 }
 
 #googleAPI {
     width: auto;
     height: 83.2vh; /* % DOES NOT WORK*/
     overflow:hidden;
-
     /* */
-    border: 1px solid orange;
 }
 
 /*** ID END ***/
@@ -977,28 +837,14 @@ td {
     overflow:hidden;
     width:auto;
     height:100%;
-    
-    
     /* */
-    border:2px dashed black;
-
 }
-
-
-
-
 
 /** CLASS END **/
 
 /**** GOOGLE API END ****/
 
-/*** BOOTSTRAP EDIT ***/
-
-
-
 /*** ID ***/
-
-
 
 /*** ID END ***/
 
@@ -1007,18 +853,12 @@ td {
 .container-fluid {
 /* overflow:hidden;*/
 padding:0.2%;
-
 /**/
-border:2px solid #7000ff; /* PURPLE*/
 }
-
 
 /** CLASS END **/
 
-
 /*** BOOTSTRAP EDIT END ***/
-
-
 
 /***** ARTICLE END *****/
 
@@ -1035,12 +875,8 @@ footer {
     /*R*/
     border-bottom-right-radius:0.6em;
     border-top-right-radius:0.2em;
-	
-    background-color:#183152; /*DARK BLUE */
-
-    
-    /**/
-   border: 2px dashed blue;
+	background-color:#183152; /*DARK BLUE */
+   /**/
 }
 
 footer p {
@@ -1054,11 +890,7 @@ footer p {
     width:100%;
     height:6vw;
     margin:inherit;
-
-
-    
-    /**/
-   border:5px solid #fffa00; /*YELLOW*/
+   /**/
 }
 
 /*** ID END ***/
@@ -1085,9 +917,7 @@ background-color:orange;
 position:absolute;
 margin-top:10%;
 margin-left:40%;
-
 height:auto;
-
 background-color:white;
 z-index:4;
 }

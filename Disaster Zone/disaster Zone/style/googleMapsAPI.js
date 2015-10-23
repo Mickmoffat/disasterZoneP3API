@@ -263,12 +263,10 @@ var interval = setInterval(function () {
 
             if (newsShow === 2) {
                 $(".NSCR3").removeAttr("id");
-                
             }
 
             if (newsShow === 3) {
                 $(".NSCR4").removeAttr("id");
-                
              }
 
             if (newsShow === 4) {
