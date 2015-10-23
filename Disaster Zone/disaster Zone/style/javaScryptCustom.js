@@ -227,19 +227,5 @@ $(document).ready(function () {
         clickRADIO = 0;
         }
 
-
-        
     });
-
-    
-
-
-      
-
-       
-
-
-
-
-    
 });

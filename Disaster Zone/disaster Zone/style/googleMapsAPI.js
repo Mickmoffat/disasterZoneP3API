@@ -19,7 +19,6 @@ function CenterControl(controlDiv, map) {
     controlUI.style.borderTopLeftRadius = '0.6em';
     controlUI.style.borderBottomLeftRadius = '0.2em';
     /*R*/
-    controlUI.style.borderTopRightRadius = '20px';
     controlUI.style.borderTopRightRadius = '0.6em';
     controlUI.style.borderBottomRightRadius = '0.2em';
     controlUI.style.padding = '2%';
@@ -77,26 +76,12 @@ function NewsControl(newsUIDiv, map) {
 
     newsUIDiv.appendChild(newsUI); //must equal name set in function eg newsUIDiv
 
-    /*++ CONTENT ROW 1 NZ ++*/
-    var newsContentR1UI = document.createElement('div'); //creates div element
-    newsContentR1UI.style.height = 'auto'; //height
-    newsContentR1UI.innerHTML = '<div class="NSCR1" id ="hidden" onclick="goToLoc()">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'; //sets text
-    
-    newsUI.appendChild(newsContentR1UI); //must equal name set in above, eg newsUI
+    /*+++ CONTENT ROW 5 BRAZIL +++*/
+    var newsContentR5UI = document.createElement('div'); //creates div element
+    newsContentR5UI.style.height = 'auto'; //height
+    newsContentR5UI.innerHTML = ' <div class="NSCR5" id ="hidden">' + '<h2>Hurricane Brazil [Moderate]</h2>' + '<p>The threat for a Hurricane building off the Atlantic coast is moderate, due to wild weather conditions. Citizens of Brazil are advised to take extra care, this storm may pass without building to a full blown Hurricane but expect high winds and hail. Over the next 48 hours be ready to batten down the hatches should this tropical storm brew into a Hurricane. Be advised to keep up to date with the latest information, here on disaster zone and local news and weather broadcasts. Send any updates to us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a>.</p>' + '</div>';
 
-    /*++ CONTENT ROW 2 AU []++*/
-    var newsContentR2UI = document.createElement('div'); //creates div element
-    newsContentR2UI.style.height = 'auto'; //height
-    newsContentR2UI.innerHTML = '<div class="NSCR2" id ="hidden">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>'; //sets line height
-
-    newsUI.appendChild(newsContentR2UI);
-
-    /*+++ CONTENT ROW 3 THAI +++*/
-    var newsContentR3UI = document.createElement('div'); //creates div element
-    newsContentR3UI.style.height = 'auto'; //height
-    newsContentR3UI.innerHTML = ' <div class="NSCR3" id ="hidden">' + '<h2>Flood Northern Thailand [Strong]</h2>' + '<p>Torrential downpours over the last three days in the northern province of Chiang Rai caused widespread flooding. State officials report the Mekong and Sai Rivers have overflowed and are flooding Chiang Rai. Farm lands and houses have been most affected by this ongoing event. Local authorities have declared this flooding a natural disaster and relief from the government is on its way to support and help with clean up. More than 1,000 homes have been affected by the flooding, and local farm lands. Thai Meteorological Department say that, over the next 24 hours rain should start to ease up there is a low risk of flash flooding in some areas. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>';
-
-    newsUI.appendChild(newsContentR3UI); //most important line, makes child of main div
+    newsUI.appendChild(newsContentR5UI); //most important line, makes child of main div
 
     /*+++ CONTENT ROW 4 USA +++*/
     var newsContentR4UI = document.createElement('div'); //creates div element
@@ -105,15 +90,26 @@ function NewsControl(newsUIDiv, map) {
 
     newsUI.appendChild(newsContentR4UI); //most important line, makes child of main div
 
-    /*+++ CONTENT ROW 5 BRAZIL +++*/
-    var newsContentR5UI = document.createElement('div'); //creates div element
-    newsContentR5UI.style.height = 'auto'; //height
-    newsContentR5UI.innerHTML = ' <div class="NSCR5" id ="hidden">' + '<h2>Hurricane Brazil [Moderate]</h2>' + '<p>The threat for a Hurricane building off the Atlantic coast is moderate, due to wild weather conditions. Citizens of Brazil are advised to take extra care, this storm may pass without building to a full blown Hurricane but expect high winds and hail. Over the next 48 hours be ready to batten down the hatches should this tropical storm brew into a Hurricane. Be advised to keep up to date with the latest information, here on disaster zone and local news and weather broadcasts. Send any updates to us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a>.</p>' + '</div>';
+    /*+++ CONTENT ROW 3 THAI +++*/
+    var newsContentR3UI = document.createElement('div'); //creates div element
+    newsContentR3UI.style.height = 'auto'; //height
+    newsContentR3UI.innerHTML = ' <div class="NSCR3" id ="hidden">' + '<h2>Flood Northern Thailand [Strong]</h2>' + '<p>Torrential downpours over the last three days in the northern province of Chiang Rai caused widespread flooding. State officials report the Mekong and Sai Rivers have overflowed and are flooding Chiang Rai. Farm lands and houses have been most affected by this ongoing event. Local authorities have declared this flooding a natural disaster and relief from the government is on its way to support and help with clean up. More than 1,000 homes have been affected by the flooding, and local farm lands. Thai Meteorological Department say that, over the next 24 hours rain should start to ease up there is a low risk of flash flooding in some areas. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>';
 
-    newsUI.appendChild(newsContentR5UI); //most important line, makes child of main div
+    newsUI.appendChild(newsContentR3UI); //most important line, makes child of main div
 
+    /*++ CONTENT ROW 2 AU []++*/
+    var newsContentR2UI = document.createElement('div'); //creates div element
+    newsContentR2UI.style.height = 'auto'; //height
+    newsContentR2UI.innerHTML = '<div class="NSCR2" id ="hidden">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>'; //sets line height
 
+    newsUI.appendChild(newsContentR2UI);
 
+    /*++ CONTENT ROW 1 NZ ++*/
+    var newsContentR1UI = document.createElement('div'); //creates div element
+    newsContentR1UI.style.height = 'auto'; //height
+    newsContentR1UI.innerHTML = '<div class="NSCR1" id ="hidden" onclick="goToLoc()">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'; //sets text
+    
+    newsUI.appendChild(newsContentR1UI); //must equal name set in above, eg newsUI
 }
 
 /*** START MAP ***/

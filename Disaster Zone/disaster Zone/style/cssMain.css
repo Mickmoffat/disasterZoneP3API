@@ -824,7 +824,9 @@ td {
 }
 
 #googleAPI {
-    width: auto;
+   
+    margin-left:0.2%;
+    margin-right:0.2%;
     height: 83.2vh; /* % DOES NOT WORK*/
     overflow:hidden;
     /* */
