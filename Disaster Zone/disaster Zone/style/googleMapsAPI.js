@@ -80,7 +80,7 @@ function NewsControl(newsUIDiv, map) {
     /*++ CONTENT ROW 1 NZ ++*/
     var newsContentR1UI = document.createElement('div'); //creates div element
     newsContentR1UI.style.height = 'auto'; //height
-    newsContentR1UI.innerHTML = '<div class="NSCR1" id ="hidden">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'; //sets text
+    newsContentR1UI.innerHTML = '<div class="NSCR1" id ="hidden" onclick="goToLoc()">' + '<h2>Earthquake New Zealand [Light]</h2>' + '<p>A light Earthquake 3.5 magnitude on the Richter scale centred 25 km of Taumarunui has struck New Zealand. Reports of light damage to houses and pathways some water piping and sewage may have been affected. Be ready for aftershocks make sure to have your earthquake survival kits ready. Tune into local radio stations and news broadcasts for up-to date information, we will continue monitoring the situation and update as the situation unfolds. To view up-to date information on earthquakes in New Zealand please visit <a href="http://www.geonet.org.nz" target="_blank">Geonet</a> , any reports on damages or further aftershocks update us on <a href="mailto:reportdisaster@disasterzone.com?subject=Report%20A%20%Disaster">updates@disasterzone.com</a></p>'; //sets text
     
     newsUI.appendChild(newsContentR1UI); //must equal name set in above, eg newsUI
 
@@ -179,6 +179,10 @@ function initMap() {
          
     ]
 
+    /**+_ CLICK NEWS ELEMENT JUMP TO MARKER _+**/
+    /**+ NEWS CONTENT 1 +**/
+
+
     /** SETS MAIN NEWS UI TO AUTO SCROLL DOWN ON UPDATED NEWS **/
     //use focus on element
     //$("div1").animate({ scrollTop: $("div1")[0].scrollHeight }, 1000);
@@ -249,33 +253,44 @@ var interval = setInterval(function () {
     /* REMOVES HIDDEN ID FROM NEWS UI*/
     //use if else and array to show and hide elements
             
-            if (newsShow === 0) {
-                $(".NSCR1").removeAttr("id");
+           if (newsShow === 0) {
+               $(".NSCR1").removeAttr("id");
+               var center = new google.maps.LatLng(-38.8833, 175.2617);
+               map.panTo(center);
             }
             
             if (newsShow === 1) {
                 $(".NSCR2").removeAttr("id");
+                var center = new google.maps.LatLng(-31.9522, 115.8589);
+                map.panTo(center);
             }
 
             if (newsShow === 2) {
                 $(".NSCR3").removeAttr("id");
+                var center = new google.maps.LatLng(19.9094, 99.8275);
+                map.panTo(center);
             }
 
             if (newsShow === 3) {
                 $(".NSCR4").removeAttr("id");
+                var center = new google.maps.LatLng(40.0000, -89.0000);
+                map.panTo(center);
             }
 
             if (newsShow === 4) {
                 $(".NSCR5").removeAttr("id");
+                var center = new google.maps.LatLng(-15.4700, -47.5500);
+                map.panTo(center);
             }
 
+            
             (function (marker, data) {
 
                 //on click make maker set to description
                 google.maps.event.addListener(marker, "click", function (e) {
                     infoWindow.setContent(data.description);
                     infoWindow.open(map, marker);
-                    animation: google.maps.Animation.BOUNCE;
+                    
               });
                 //ADD IN BOUNCE HERE
 
