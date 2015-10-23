@@ -180,7 +180,7 @@ function initMap() {
     ]
 
     /** SETS MAIN NEWS UI TO AUTO SCROLL DOWN ON UPDATED NEWS **/
-
+    //use focus on element
     //$("div1").animate({ scrollTop: $("div1")[0].scrollHeight }, 1000);
 
     /** AFTER WINDOW LOADS FUNCTION **/
@@ -248,7 +248,7 @@ var interval = setInterval(function () {
     /** SETS MARKER DESCRIPTION DESPLAY ON CLICK **/
     /* REMOVES HIDDEN ID FROM NEWS UI*/
     //use if else and array to show and hide elements
-
+            
             if (newsShow === 0) {
                 $(".NSCR1").removeAttr("id");
             }
@@ -275,7 +275,7 @@ var interval = setInterval(function () {
                 google.maps.event.addListener(marker, "click", function (e) {
                     infoWindow.setContent(data.description);
                     infoWindow.open(map, marker);
-                    animation: google.maps.Animation.BOUCNE;
+                    animation: google.maps.Animation.BOUNCE;
               });
                 //ADD IN BOUNCE HERE
 
