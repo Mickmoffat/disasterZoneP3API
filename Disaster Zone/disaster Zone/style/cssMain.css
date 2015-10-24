@@ -1,11 +1,6 @@
 /**** CSS main style sheet disaster zone MDDN201 P3 [2015] (300317288)****/
 
 /***** INDEX STYLE *****/
-/*[STOP STYLETIME]*/
-
-/*CUSTOM FONT LOCAL*/
-/* CONTENT */
-
 /**** FONT-SIZE-STYLE ****/
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
@@ -17,7 +12,6 @@ h1 {
     font-size:42px;    
     font-size:2.625em;
     font-size:3.2vw;
-    
     padding:1.5%;
 }
 
@@ -30,8 +24,7 @@ h2 {
     margin:0.1%;
     padding:0.2%;
 }
- /*-- NOT WORKING --*/
-/* ALERT  [DISABLED REPLACED BY IMG]*/
+ 
 h3 {
     font-family:'Lato';
     color:#183152;
@@ -53,8 +46,7 @@ h6 {
 
 }
 
- /*-- NOT WORKING --*/
-/** MAP KEY ITEMS **/
+ /** MAP KEY ITEMS **/
 h4 {
     font-family:'Lato';
     color:#183152; /* DARK BLUE*/
@@ -64,13 +56,13 @@ h4 {
 
 }
 /* FOR UI KEY HEADER */
+
 h7 {
     font-family:'Lato';
     color:#f9f9f9; /* DARK BLUE*/
     font-size:1.4vw;
     margin:0.2%;
     padding:0.2%;
-
 }
 
 #navHExpand h4 {
@@ -98,9 +90,6 @@ p {
     padding:0.5%;
 }
 
-
-
-
 /** LIST ELEMENT **/
 /* UNSORTED */
 ul {
@@ -123,10 +112,8 @@ a:link {
 }
 
 a {
-
-     color:#378148; /*GREEN*/
+    color:#378148; /*GREEN*/
 }
-
 
 /**** FONT-SIZE-STYLE-END ****/
 
@@ -168,9 +155,6 @@ header {
     margin-left:0.5%;
     height:auto;
 }
-
-/* HEADER ALERT CONTAIN */
- /*-- NOT WORKING --*/
 
 .headerAlert {
     width:23.84%;
@@ -242,7 +226,6 @@ height:auto;
 /**/
 }
 
- /*-- NOT WORKING --*/
 /* ID */
 
 /* ALERTS SHOW */
@@ -260,8 +243,6 @@ height:auto;
     padding:0.5%;
     position:absolute;
     z-index:5;
-
-    
     /*BORDER*/
     /*L*/
     border-bottom-left-radius:0.6em;
@@ -269,10 +250,8 @@ height:auto;
     /*R*/
     border-bottom-right-radius:0.6em;
     border-top-right-radius:0.2em;
-    
     background-color:#C4D7ED; /* LIGHT BLUE */
     overflow:hidden;
-
     /* */
  }
 
@@ -281,11 +260,9 @@ height:auto;
     height:auto;
     margin-left:75%;
     margin-top:6%;
-  
-    padding:0.5%;
+   padding:0.5%;
     position:absolute;
     z-index:5;
-
     /*BORDER*/
     /*L*/
     border-bottom-left-radius:0.6em;
@@ -293,7 +270,6 @@ height:auto;
     /*R*/
     border-bottom-right-radius:0.6em;
     border-top-right-radius:0.2em;
-
     overflow:hidden;
     background-color:#C4D7ED; /* LIGHT BLUE */
     /* */
@@ -304,11 +280,9 @@ height:auto;
     height:auto;
     margin-left:75%;
     margin-top:6%;
-  
     padding:0.5%;
     position:absolute;
     z-index:5;
-
     /*BORDER*/
     /*L*/
     border-bottom-left-radius:0.6em;
@@ -316,10 +290,8 @@ height:auto;
     /*R*/
     border-bottom-right-radius:0.6em;
     border-top-right-radius:0.2em;
-    
     background-color:#C4D7ED; /* LIGHT BLUE */
     overflow:hidden;
-
     /* */
 }
 
@@ -327,17 +299,13 @@ height:auto;
 #alertsPosition {
     width:23.34%;
     height:auto;
-   
     margin-top:6%;
     margin-right:5%;
     margin-left:74.5%;
-    
     position:absolute;
     display:inline-block;
-
     overflow:hidden;
     background-color:#ff530d; /* ORANGE */
-    
     /**/
 }
 
@@ -390,12 +358,10 @@ font-family:'Lato';
 
 /*+ PLACEHOLDER TEXT STYLE END +*/
 
-
-
 /** INPUT DIV **/
 .inputDivRow1 {
-    
 }
+
 #inputDiv {
     display:inline-block;
     overflow:hidden;
@@ -412,7 +378,7 @@ font-family:'Lato';
 /*** HEADER CONTENT END ***/
 /**** NAV BAR ****/
 
-/*** NAV ID [NEEDS FIXING] ***/
+/*** NAV ID ***/
 #navBar {
     width:454px;
     width:23.84%;
@@ -486,7 +452,7 @@ font-family:'Lato';
     /* */
 }
 
-/**-+ HIDE THE BASTARD [P3]>:) +-**/
+/**-+ HIDE +-**/
 /* FOR GIGGLES https://www.youtube.com/watch?v=ONRDwJlCpn4 */
 .moreInfoHide {
     width:100%;
@@ -495,10 +461,6 @@ font-family:'Lato';
 }
 
 /***+++++ NAV EXPAND +++++***/
-/**+++ ID +++**/
-
-/**+++ ID END +++**/
-
 /*++ CLASS ++*/
 
 #navNExpand {
@@ -526,7 +488,7 @@ font-family:'Lato';
     /* */
 }
 
-/** NEWS EXPAND CONTENT [ADD HIDDEN ELEMENT IN JQ EXPAND ON CLICK [P3]]**/
+/** NEWS EXPAND CONTENT **/
 .NSCR1 {
     height:auto;
     margin-bottom:0.5%;
@@ -569,6 +531,7 @@ font-family:'Lato';
   /**/
     border-bottom:0.225em dashed #EAEBFF; /*LIGHT BLUE*/
 }
+
 /**+ HIDDEN ELEMENT CLASS +**/
 #hiddenElement {
     height:10%;
@@ -689,7 +652,6 @@ html {
 /***** ARTICLE *****/
 article {
     height:75%;
-
     /* colors */
     background-color:#f9f9f9; /*OFF WHITE*/
 
@@ -739,7 +701,7 @@ article {
 
 /***+ EVENT OVERLAY END +***/
 
-/**** MAP KEY [FIX]****/
+/**** MAP KEY ****/
 
 /*** MAP KEY TABLE ***/
 
@@ -814,7 +776,6 @@ td {
 
 
 /**** GOOGLE API ****/
-
 /** ID **/
 
 #mainContainerApi {
@@ -846,10 +807,6 @@ td {
 
 /**** GOOGLE API END ****/
 
-/*** ID ***/
-
-/*** ID END ***/
-
 /** CLASS **/
 
 .container-fluid {
@@ -859,14 +816,12 @@ padding:0.2%;
 }
 
 /** CLASS END **/
-
 /*** BOOTSTRAP EDIT END ***/
-
 /***** ARTICLE END *****/
 
 /***** FOOTER *****/
 footer {
-    width:100%;
+    width:99.7%;
     height:auto;
     margin:auto;
 
@@ -896,11 +851,6 @@ footer p {
 }
 
 /*** ID END ***/
-
-/*** CLASS ***/
-
-/*** CLASS END ***/
-
 /***** FOOTER END *****/
 
 
@@ -930,3 +880,4 @@ height:auto;
 display:inline-block;
 }
 
+/* MANY CSS MUCH CODE */

@@ -17,7 +17,6 @@ $(document).ready(function () {
 /* CLICK VAR */
     // var counter to show or hide #hidden ID
 
-    //var clickN = 0;  //NEWS [DISABLED]
     var clickP = 0; //PREPARE
     var clickC = 0; //COMMUNICATION
     var clickH = 0; //HELP OUT
@@ -174,9 +173,6 @@ $(document).ready(function () {
     });
 
     /*^& CLEAR ALL DROP DOWNS ON CLICK MAIN CONTAINER &^*/
-    //slight bug after clearing, by clicking on container div requres double click to get drop down to work again
-    
-
     $("#mainContainerApi").click(function () {
 
 /*+++++ HEADER INFO +++++*/

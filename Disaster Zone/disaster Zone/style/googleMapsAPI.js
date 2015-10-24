@@ -2,11 +2,9 @@
 
 /*** CUSTOM SETTINGS ***/
 var map;
-var marker; //[not working]
+var marker;
 
 /** NEW MAP METHOD **/
-
-
 /** CUSTOM UI ELEMENTS  START **/
 function CenterControl(controlDiv, map) {
 
@@ -25,7 +23,7 @@ function CenterControl(controlDiv, map) {
     controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
     controlUI.style.cursor = 'pointer'; //sets custom pointers
     controlUI.style.textAlign = 'left'; //sets text alignment
-    controlUI.style.width = '20vw'; //sets width [NEEDS FIXING]
+    controlUI.style.width = '20vw'; //sets width
     //MARGIN
     controlUI.style.marginRight = '2%';
     controlUI.style.marginBottom = '2%'; //sets margin
@@ -53,7 +51,6 @@ function CenterControl(controlDiv, map) {
     controlUI.appendChild(alertLevelText);
 
     /* KEY UI END */
-
 }
 
 
@@ -66,7 +63,7 @@ function NewsControl(newsUIDiv, map) {
     newsUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)'; //sets shadow
     newsUI.style.cursor = 'pointer'; //sets custom pointers
     newsUI.style.textAlign = 'left'; //sets text alignment
-    newsUI.style.width = '23.5vw'; //sets width [NEEDS FIXING]
+    newsUI.style.width = '23.5vw'; //sets width
     newsUI.style.height = '83.2vh'; //does not accept %
     newsUI.style.overflow = 'scroll';
     
@@ -97,7 +94,7 @@ function NewsControl(newsUIDiv, map) {
 
     newsUI.appendChild(newsContentR3UI); //most important line, makes child of main div
 
-    /*++ CONTENT ROW 2 AU []++*/
+    /*++ CONTENT ROW 2 AU ++*/
     var newsContentR2UI = document.createElement('div'); //creates div element
     newsContentR2UI.style.height = 'auto'; //height
     newsContentR2UI.innerHTML = '<div class="NSCR2" id ="hidden">' + '<h2>Bushfire Western Australia [Severe]</h2>' + '<p> A large bush fire is burning across Western Australia more than 80,000 hectares of forest has been affected. The fire has been burning for several days now local authorities of Perth have declared this event a natural disaster; people affected are eligible for state assistance. Residences of Perth are being asked to prepare for an evacuation if the fire cannot be stemmed over the next 48 hours. Dry conditions high temperatures over the past month are to blame, for this rampant out of control bush fire. Keep up to date with the latest information, on this ongoing event here and on local via radio and TV broadcasts.</p>' + '</div>'; //sets line height
@@ -175,15 +172,7 @@ function initMap() {
          
     ]
 
-    /**+_ CLICK NEWS ELEMENT JUMP TO MARKER _+**/
-    /**+ NEWS CONTENT 1 +**/
-
-
-    /** SETS MAIN NEWS UI TO AUTO SCROLL DOWN ON UPDATED NEWS **/
-    //use focus on element
-    //$("div").animate({ scrollDown: $("div")[0].scrollHeight }, 1000);
-
-    /** AFTER WINDOW LOADS FUNCTION **/
+   /** AFTER WINDOW LOADS FUNCTION **/
 
     window.onload = function () {
         var mapOptions = {
