@@ -197,7 +197,21 @@ display:inline-block;
 #imgAlert {
 width:100%;
 height:auto;
+}
 
+#imgAlert1 {
+width:100%;
+height:auto;
+}
+
+#imgAlert2 {
+width:100%;
+height:auto;
+}
+
+#imgAlert3 {
+width:100%;
+height:auto;
 }
 /* HEADER ALERTS */
 /*ALERT ID*/
@@ -206,7 +220,22 @@ height:auto;
     height:99%;
     margin:0.5%;
     display:inline-block;
-    
+    /* */
+}
+
+#alertID1 {
+    width:20%;
+    height:99%;
+    margin:0.5%;
+    display:inline-block;
+    /* */
+}
+
+#alertID2 {
+    width:20%;
+    height:99%;
+    margin:0.5%;
+    display:inline-block;
     /* */
 }
 /* EMAIL */
@@ -366,7 +395,32 @@ font-family:'Lato';
     overflow:hidden;
     /* */
 }
+#inputDiv1 {
+    display:inline-block;
+    overflow:hidden;
+    /* */
+}
+#inputDiv2 {
+    display:inline-block;
+    overflow:hidden;
+    /* */
+}
+#inputDiv3 {
+    display:inline-block;
+    overflow:hidden;
+    /* */
+}
+#inputDiv4 {
+    display:inline-block;
+    overflow:hidden;
+    /* */
+}
 
+#inputDiv5 {
+    display:inline-block;
+    overflow:hidden;
+    /* */
+}
 .inputDivRow2 {
     width:auto;
     height:auto;
@@ -390,7 +444,43 @@ font-family:'Lato';
     /* */
 }
 
-#h1NavHeader {
+#navBar1 {
+    width:454px;
+    width:23.84%;
+    height:80px;
+    height:85%;
+    margin:0.5%;
+    display:inline-block;
+    /*COLOR*/
+    background-color:#375D81; /* BLUE DARK */
+    /* */
+}
+
+#navBar2 {
+    width:454px;
+    width:23.84%;
+    height:80px;
+    height:85%;
+    margin:0.5%;
+    display:inline-block;
+    /*COLOR*/
+    background-color:#375D81; /* BLUE DARK */
+    /* */
+}
+
+#navBar3 {
+    width:454px;
+    width:23.84%;
+    height:80px;
+    height:85%;
+    margin:0.5%;
+    display:inline-block;
+    /*COLOR*/
+    background-color:#375D81; /* BLUE DARK */
+    /* */
+}
+
+.h1NavHeader {
     text-align:center;
 }
 /*** NAV ID END ***/
